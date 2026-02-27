@@ -1,0 +1,2219 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>5 Most In-Demand AI, Cybersecurity, and Computer Science Skills for 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e293b',
+                        secondary: '#475569',
+                        accent: '#3b82f6',
+                        neutral: '#64748b',
+                        'base-content': '#334155'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <style>
+        .mermaid-container {
+            display: flex;
+            justify-content: center;
+            min-height: 300px;
+            max-height: 800px;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mermaid-container .mermaid {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            cursor: grab;
+            transition: transform 0.3s ease;
+            transform-origin: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            touch-action: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .mermaid-container .mermaid svg {
+            max-width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .mermaid-container .mermaid:active {
+            cursor: grabbing;
+        }
+
+        .mermaid-container.zoomed .mermaid {
+            height: 100%;
+            width: 100%;
+            cursor: grab;
+        }
+
+        .mermaid-controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .mermaid-control-btn {
+            background: #ffffff;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #374151;
+            font-size: 14px;
+            min-width: 36px;
+            height: 36px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mermaid-control-btn:hover {
+            background: #f8fafc;
+            border-color: #3b82f6;
+            color: #3b82f6;
+            transform: translateY(-1px);
+        }
+
+        .mermaid-control-btn:active {
+            transform: scale(0.95);
+        }
+        @media (max-width: 1024px) {
+            .mermaid-control-btn:not(.reset-zoom) {
+                display: none;
+            }
+            .mermaid-controls {
+                top: auto;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+    </style>
+  <base target="_blank">
+</head>
+
+  <body class="bg-gray-50 font-sans text-base-content leading-relaxed">
+    <!-- Toggle button for mobile -->
+    <button id="toc-toggle" class="fixed top-4 left-4 z-50 md:hidden bg-primary text-white p-2 rounded-lg shadow-lg">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Fixed Table of Contents -->
+    <nav id="toc-nav" class="fixed left-0 top-0 h-screen w-80 bg-white shadow-xl border-r border-gray-200 overflow-y-auto z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300">
+      <div class="p-6">
+        <div class="mb-8">
+          <h3 class="font-serif text-lg font-semibold text-primary mb-2">Table of Contents</h3>
+          <div class="w-12 h-0.5 bg-accent"></div>
+        </div>
+
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="#hero" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">Overview</a>
+          </li>
+          <li>
+            <a href="#executive-summary" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">Executive Summary</a>
+          </li>
+          <li>
+            <a href="#python-programming" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">1. Python Programming</a>
+            <ul class="ml-4 mt-2 space-y-1 text-xs">
+              <li>
+                <a href="#python-learning-difficulty" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Learning Difficulty</a>
+              </li>
+              <li>
+                <a href="#python-projects" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Project Ideas</a>
+              </li>
+              <li>
+                <a href="#python-timeline" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Time to Competency</a>
+              </li>
+              <li>
+                <a href="#python-tools" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Essential Tools</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#machine-learning" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">2. Machine Learning &amp; Deep Learning</a>
+            <ul class="ml-4 mt-2 space-y-1 text-xs">
+              <li>
+                <a href="#ml-learning-difficulty" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Learning Difficulty</a>
+              </li>
+              <li>
+                <a href="#ml-projects" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Project Ideas</a>
+              </li>
+              <li>
+                <a href="#ml-timeline" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Time to Competency</a>
+              </li>
+              <li>
+                <a href="#ml-tools" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Essential Tools</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#cybersecurity" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">3. Cybersecurity Fundamentals</a>
+            <ul class="ml-4 mt-2 space-y-1 text-xs">
+              <li>
+                <a href="#cybersecurity-learning-difficulty" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Learning Difficulty</a>
+              </li>
+              <li>
+                <a href="#cybersecurity-projects" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Project Ideas</a>
+              </li>
+              <li>
+                <a href="#cybersecurity-timeline" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Time to Competency</a>
+              </li>
+              <li>
+                <a href="#cybersecurity-tools" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Essential Tools</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#data-science" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">4. Data Science &amp; Analytics</a>
+            <ul class="ml-4 mt-2 space-y-1 text-xs">
+              <li>
+                <a href="#ds-learning-difficulty" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Learning Difficulty</a>
+              </li>
+              <li>
+                <a href="#ds-projects" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Project Ideas</a>
+              </li>
+              <li>
+                <a href="#ds-timeline" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Time to Competency</a>
+              </li>
+              <li>
+                <a href="#ds-tools" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Essential Tools</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#critical-thinking" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">5. Critical Thinking</a>
+            <ul class="ml-4 mt-2 space-y-1 text-xs">
+              <li>
+                <a href="#ct-learning-difficulty" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Learning Difficulty</a>
+              </li>
+              <li>
+                <a href="#ct-projects" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Project Ideas</a>
+              </li>
+              <li>
+                <a href="#ct-timeline" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Time to Competency</a>
+              </li>
+              <li>
+                <a href="#ct-tools" class="block text-neutral hover:text-accent transition-colors duration-200 py-1">Essential Tools</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#strategic-synthesis" class="block text-secondary hover:text-accent transition-colors duration-200 py-1">Strategic Synthesis</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="ml-0 md:ml-80 min-h-screen">
+      <!-- Hero Section -->
+      <section id="hero" class="bg-gradient-to-br from-slate-900 to-slate-700 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+          <img src="https://kimi-web-img.moonshot.cn/img/images.stockcake.com/46fa56af3448fbd9720fa7a0a70e6795bd495578.jpg" alt="Abstract digital network with nodes and connections" class="w-full h-full object-cover" size="wallpaper" aspect="wide" query="abstract digital network" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+        </div>
+
+        <div class="relative z-10 px-4 md:px-12 py-16">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <!-- Title Block -->
+            <div class="md:col-span-8 space-y-6">
+              <div class="space-y-4">
+                <span class="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium">
+                  University Admissions 2026
+                </span>
+                <h1 class="font-serif text-3xl md:text-5xl font-bold leading-tight">
+                  <em class="not-italic bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                    The Five Most In-Demand Skills for
+                  </em>
+                  <br/>
+                  <span class="text-xl md:text-4xl font-normal text-gray-200">
+                    AI, Cybersecurity, and Computer Science
+                  </span>
+                </h1>
+                <p class="text-base md:text-xl text-gray-300 max-w-2xl leading-relaxed">
+                  Strategic competencies that distinguish exceptional undergraduate applicants in the converged landscape of artificial intelligence and cybersecurity
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="md:col-span-4 mt-8 md:mt-0">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <div class="text-2xl font-bold text-accent">67%</div>
+                  <div class="text-sm text-gray-300">Cybersecurity roles requiring AI proficiency</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <div class="text-2xl font-bold text-accent">30%</div>
+                  <div class="text-sm text-gray-300">Projected growth in hybrid expertise demand</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <div class="text-2xl font-bold text-accent">2-6</div>
+                  <div class="text-sm text-gray-300">Months for Python competency</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <div class="text-2xl font-bold text-accent">5</div>
+                  <div class="text-sm text-gray-300">Critical skills for admission success</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section id="executive-summary" class="px-4 md:px-12 py-16 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-12">
+            <h2 class="font-serif text-3xl font-bold text-primary mb-4">Executive Summary</h2>
+            <div class="w-16 h-1 bg-accent mb-8"></div>
+          </div>
+
+          <div class="prose prose-lg max-w-none">
+            <div class="bg-gray-50 border-l-4 border-accent p-8 mb-8 rounded-r-lg">
+              <p class="text-lg leading-relaxed text-gray-800 mb-0">
+                <strong>TL;DR:</strong> The five most in-demand skills for undergraduate AI, cybersecurity, and CS applicants in 2026 are: <strong>Python Programming</strong> (foundational, 2–6 months), <strong>Machine Learning/Deep Learning</strong> (advanced technical, 3–9 months), <strong>Cybersecurity Fundamentals</strong> (hands-on defensive/offensive skills, 3–8 months), <strong>Data Science &amp; Big Data Analytics</strong> (data-driven decision making, 2–6 months), and <strong>Critical Thinking &amp; Problem-Solving</strong> (essential soft skill, 3–12 months). Success requires balancing 2–3 technical depths with demonstrated soft skills, built through substantial portfolio projects rather than tutorial completion.
+              </p>
+            </div>
+
+            <p class="text-lg leading-relaxed mb-6">
+              The global technology landscape in 2026 is defined by unprecedented convergence between artificial intelligence, cybersecurity, and data-driven systems. For undergraduate applicants seeking competitive advantage at premier institutions worldwide, demonstrating proficiency in five strategically selected skills has become essential.
+            </p>
+
+            <p class="leading-relaxed mb-6">
+              The <strong>integration of AI and cybersecurity</strong>—termed &#34;AI-aware cybersecurity&#34; by industry leaders—represents the most significant development shaping skill requirements. With 67% of cybersecurity roles now requiring AI proficiency and demand for hybrid expertise projected to grow 30% within five years, applicants must transcend traditional disciplinary boundaries <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[454]</a>
+              <a href="https://www.pluralsight.com/resources/blog/upskilling/top-tech-skills-2026-with-tests" class="text-accent hover:underline" target="_blank">[455]</a>.
+            </p>
+
+            <p class="leading-relaxed mb-6">
+              Simultaneously, <strong>critical thinking and communication skills</strong> have emerged as differentiators that separate exceptional candidates from technically proficient but narrowly prepared applicants <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[360]</a>.
+            </p>
+
+            <p class="leading-relaxed">
+              This report provides actionable guidance across four dimensions for each skill: <strong>learning difficulty calibrated on a 1–10 scale</strong>, <strong>project ideas proven to impress admissions committees</strong>, <strong>realistic timelines to basic competency</strong>, and <strong>essential tools for effective skill development</strong>. The recommendations reflect analysis of admission patterns at leading institutions including MIT, Carnegie Mellon, Stanford, and emerging global competitors, alongside employer demand data from technology sector surveys <a href="https://research.com/advice/most-popular-concentrations-in-computer-science-degrees" class="text-accent hover:underline" target="_blank">[482]</a>
+              <a href="https://collegeall.com/blogs/top-skill-development-programs-universities-will-focus-on-in-2026/" class="text-accent hover:underline" target="_blank">[497]</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Python Programming Section -->
+      <section id="python-programming" class="px-4 md:px-12 py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12">
+            <h2 class="font-serif text-4xl font-bold text-primary mb-4">1. Python Programming for AI and Security Applications</h2>
+            <div class="w-20 h-1 bg-accent mb-6"></div>
+            <p class="text-xl text-secondary leading-relaxed max-w-4xl">
+              The foundational language that enables all subsequent technical specialization, Python&#39;s accessibility masks the depth required for production-quality AI and security applications.
+            </p>
+          </div>
+
+          <!-- Learning Difficulty -->
+          <div id="python-learning-difficulty" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Learning Difficulty Assessment</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">3–4 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Basic Syntax and Foundational Concepts</h4>
+                <p class="text-secondary leading-relaxed">
+                  Python&#39;s English-like syntax and &#34;batteries included&#34; standard library enable rapid initial progress. Core constructs can be grasped within 40–60 hours of structured practice <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[513]</a>.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">6–7 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Advanced Libraries and Frameworks</h4>
+                <p class="text-secondary leading-relaxed">
+                  Production-quality development with TensorFlow, PyTorch, Scikit-learn, and security libraries requires understanding underlying computational principles and domain-specific methodologies <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[513]</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
+              <div class="flex items-start">
+                <i class="fas fa-lightbulb text-blue-400 mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-semibold text-blue-900 mb-2">Key Insight</h4>
+                  <p class="text-blue-800">
+                    Admissions committees distinguish between applicants who have completed tutorials and those who have developed fluent problem-solving capability evidenced through substantial independent projects. Syntax familiarity alone is insufficient.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Ideas -->
+          <div id="python-projects" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Project Ideas That Impress Admissions</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-shield-alt text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">ML-Based Intrusion Detection System</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Process network traffic data from NSL-KDD or CICIDS2017 datasets, implementing both signature-based and anomaly-based detection with classification accuracy above 95% <a href="https://research.com/advice/ai-automation-and-the-future-of-cybersecurity-degree-careers" class="text-accent hover:underline" target="_blank">[514]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Network Security</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Supervised Learning</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Real-time Processing</span>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-search text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Automated Vulnerability Scanner</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Implement core detection logic for SQL injection, XSS, and security misconfigurations with intelligent crawling and structured reporting following professional standards <a href="https://www.21kschool.com/in/blog/cybersecurity-projects-for-students/" class="text-accent hover:underline" target="_blank">[528]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Web Security</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Automation</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">OWASP</span>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-fish text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">AI-Powered Phishing Detection</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Combine email header analysis, URL reputation checking, and content classification using transformer-based models with explanation generation for user understanding <a href="https://www.21kschool.com/in/blog/cybersecurity-projects-for-students/" class="text-accent hover:underline" target="_blank">[528]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">NLP</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Multi-modal Classification</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">User-centered Design</span>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-chart-line text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Network Traffic Analyzer</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Ingest PCAP files, extract statistical features, and apply isolation forests or autoencoders for behavioral deviation detection with interactive visualization dashboards <a href="https://research.com/advice/ai-automation-and-the-future-of-cybersecurity-degree-careers" class="text-accent hover:underline" target="_blank">[514]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Systems Programming</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Unsupervised Learning</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Visualization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div id="python-timeline" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Time to Basic Competency</h3>
+
+            <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                  <h4 class="font-semibold text-lg text-primary">Core Syntax and Fundamentals</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-green-100 text-green-800 px-4 py-2 rounded-lg font-semibold">2–3 Months</div>
+                    <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">80–120 Hours</div>
+                  </div>
+                  <ul class="space-y-2 text-secondary">
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Functional scripts and debugging proficiency</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>PEP 8 adherence and code documentation</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Problem decomposition into implementable functions</li>
+                  </ul>
+                </div>
+
+                <div class="space-y-4">
+                  <h4 class="font-semibold text-lg text-primary">AI/Security Library Proficiency</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg font-semibold">4–6 Months</div>
+                    <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">200–400 Hours</div>
+                  </div>
+                  <ul class="space-y-2 text-secondary">
+                    <li class="flex items-center"><i class="fas fa-check text-yellow-500 mr-2"></i>End-to-end project implementation</li>
+                    <li class="flex items-center"><i class="fas fa-check text-yellow-500 mr-2"></i>Environment management and dependency resolution</li>
+                    <li class="flex items-center"><i class="fas fa-check text-yellow-500 mr-2"></i>Comprehensive documentation and testing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div id="python-tools" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Essential Tools and Platforms</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-code text-accent mr-3"></i>
+                  Development Environment
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-blue-400 pl-4">
+                    <div class="font-medium text-primary">Jupyter Notebook/Lab</div>
+                    <div class="text-sm text-secondary">Exploratory data analysis and educational communication</div>
+                  </div>
+                  <div class="border-l-4 border-green-400 pl-4">
+                    <div class="font-medium text-primary">Visual Studio Code</div>
+                    <div class="text-sm text-secondary">General-purpose development with extensive extensions</div>
+                  </div>
+                  <div class="border-l-4 border-purple-400 pl-4">
+                    <div class="font-medium text-primary">PyCharm</div>
+                    <div class="text-sm text-secondary">Professional Python development with framework support</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-brain text-accent mr-3"></i>
+                  AI/ML Libraries
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-orange-400 pl-4">
+                    <div class="font-medium text-primary">TensorFlow &amp; PyTorch</div>
+                    <div class="text-sm text-secondary">Deep learning frameworks with complementary strengths</div>
+                  </div>
+                  <div class="border-l-4 border-red-400 pl-4">
+                    <div class="font-medium text-primary">Scikit-learn</div>
+                    <div class="text-sm text-secondary">Classical machine learning algorithms and evaluation</div>
+                  </div>
+                  <div class="border-l-4 border-teal-400 pl-4">
+                    <div class="font-medium text-primary">Pandas &amp; NumPy</div>
+                    <div class="text-sm text-secondary">Data manipulation and numerical computing foundations</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Machine Learning Section -->
+      <section id="machine-learning" class="px-4 md:px-12 py-16 bg-white">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12">
+            <h2 class="font-serif text-4xl font-bold text-primary mb-4">2. Machine Learning and Deep Learning Fundamentals</h2>
+            <div class="w-20 h-1 bg-accent mb-6"></div>
+            <p class="text-xl text-secondary leading-relaxed max-w-4xl">
+              The intellectual pinnacle of undergraduate technical preparation, requiring synthesis of mathematical theory, algorithmic implementation, and empirical methodology.
+            </p>
+          </div>
+
+          <!-- Learning Difficulty -->
+          <div id="ml-learning-difficulty" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Learning Difficulty Assessment</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">7–8 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Core Concepts and Implementation</h4>
+                <p class="text-secondary leading-relaxed">
+                  Requires synthesis of statistical learning theory, optimization algorithms, and computational complexity analysis. Debugging ML systems demands specialized skills in recognizing data leakage and diagnosing convergence failures <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[513]</a>.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">8–9 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Neural Networks and Model Optimization</h4>
+                <p class="text-secondary leading-relaxed">
+                  Architecture design, training dynamics, scale engineering, deployment optimization, and reliability considerations introduce additional complexity layers that approach research-level challenges <a href="https://research.com/advice/ai-automation-and-the-future-of-cybersecurity-degree-careers" class="text-accent hover:underline" target="_blank">[514]</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Ideas -->
+          <div id="ml-projects" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Project Ideas That Impress Admissions</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-virus text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Deep Learning for Malware Classification</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Process executable files as raw byte sequences or API call graphs using convolutional, recurrent, or graph neural networks. Address class imbalance and adversarial robustness with attention visualization <a href="https://research.com/advice/ai-automation-and-the-future-of-cybersecurity-degree-careers" class="text-accent hover:underline" target="_blank">[514]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">CNN/RNN/Transformer</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Adversarial Robustness</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Explainability</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> Integration with sandbox environments for dynamic analysis or contribution to production security tools
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-comments text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">NLP Chatbot for Customer Service</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Leverage pre-trained transformer models through fine-tuning for intent classification, dialogue state tracking, and response generation. Address context maintenance and uncertainty expression <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[513]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">BERT/GPT/T5</span>
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Dialogue Management</span>
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Human Evaluation</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> Domain-specific applications with clear stakeholder needs and multi-turn conversation capabilities
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-eye text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Computer Vision Security System</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Implement facial recognition or object detection with YOLO, Faster R-CNN, or DETR architectures. Address demographic fairness, privacy implications, and edge deployment optimization <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[513]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Object Detection</span>
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Bias Analysis</span>
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Edge Deployment</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> Responsible development practices with explicit use case limitations and privacy-preserving design
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-chart-line text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Fraud Detection Predictive Analytics</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Address class imbalance, temporal dynamics, and adversarial evolution in financial fraud detection. Implement hybrid architectures combining historical analysis with real-time behavioral biometrics <a href="https://research.com/advice/ai-automation-and-the-future-of-cybersecurity-degree-careers" class="text-accent hover:underline" target="_blank">[514]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Class Imbalance</span>
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Temporal Patterns</span>
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Model Interpretation</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> A/B testing integration for intervention evaluation and business impact quantification
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div id="ml-timeline" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Time to Basic Competency</h3>
+
+            <div class="space-y-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Supervised/Unsupervised Learning Basics</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">3–4 Months</div>
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-semibold">150–250 Hours</div>
+                  </div>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Foundational competency enabling implementation of standard algorithms with appropriate evaluation. Requires solid Python, linear algebra, and basic probability foundations <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[513]</a>.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="font-medium text-primary mb-2">Core Competencies</div>
+                    <ul class="text-sm text-secondary space-y-1">
+                      <li>• Linear/logistic regression</li>
+                      <li>• Decision trees and SVMs</li>
+                      <li>• K-means and PCA</li>
+                      <li>• Cross-validation</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="font-medium text-primary mb-2">Learning Pathway</div>
+                    <ul class="text-sm text-secondary space-y-1">
+                      <li>• Structured coursework</li>
+                      <li>• Algorithm implementation</li>
+                      <li>• End-to-end projects</li>
+                      <li>• Kaggle competitions</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="font-medium text-primary mb-2">Key Milestones</div>
+                    <ul class="text-sm text-secondary space-y-1">
+                      <li>• Loss minimization intuition</li>
+                      <li>• Gradient descent understanding</li>
+                      <li>• Principled evaluation</li>
+                      <li>• Error analysis capability</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Deep Learning and Neural Networks</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg font-semibold">6–9 Months</div>
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-semibold">300–500 Hours</div>
+                  </div>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Specialization requiring mathematical prerequisites, framework-specific knowledge, and empirical judgment through extensive experimentation. Includes feedforward networks, CNNs, RNNs, and transformer architectures <a href="https://research.com/advice/ai-automation-and-the-future-of-cybersecurity-degree-careers" class="text-accent hover:underline" target="_blank">[514]</a>.
+                </p>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                  <div class="flex items-start">
+                    <i class="fas fa-exclamation-triangle text-yellow-400 mt-1 mr-3"></i>
+                    <div>
+                      <h5 class="font-semibold text-yellow-900 mb-1">Research Preparation</h5>
+                      <p class="text-yellow-800 text-sm">For research-intensive programs, original contributions through paper reproduction or open-source project participation can distinguish exceptional preparation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div id="ml-tools" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Essential Tools and Platforms</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-cogs text-accent mr-3"></i>
+                  Frameworks &amp; Libraries
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-orange-400 pl-4">
+                    <div class="font-medium text-primary">PyTorch</div>
+                    <div class="text-sm text-secondary">Dynamic graphs, intuitive debugging, research dominance</div>
+                    <div class="text-xs text-accent mt-1">Primary recommendation for learning</div>
+                  </div>
+                  <div class="border-l-4 border-blue-400 pl-4">
+                    <div class="font-medium text-primary">TensorFlow</div>
+                    <div class="text-sm text-secondary">Production ecosystem, deployment tools, mobile/edge optimization</div>
+                  </div>
+                  <div class="border-l-4 border-green-400 pl-4">
+                    <div class="font-medium text-primary">Scikit-learn</div>
+                    <div class="text-sm text-secondary">Classical ML algorithms, model selection, evaluation pipelines</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-database text-accent mr-3"></i>
+                  Cloud &amp; Hardware
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-purple-400 pl-4">
+                    <div class="font-medium text-primary">Google Colab</div>
+                    <div class="text-sm text-secondary">Free GPU/TPU access, notebook-based experimentation</div>
+                  </div>
+                  <div class="border-l-4 border-teal-400 pl-4">
+                    <div class="font-medium text-primary">AWS SageMaker</div>
+                    <div class="text-sm text-secondary">Managed notebooks, distributed training, MLOps</div>
+                  </div>
+                  <div class="border-l-4 border-red-400 pl-4">
+                    <div class="font-medium text-primary">Local GPU Setup</div>
+                    <div class="text-sm text-secondary">NVIDIA RTX series for cost-effective deep learning</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cybersecurity Section -->
+      <section id="cybersecurity" class="px-4 md:px-12 py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12">
+            <h2 class="font-serif text-4xl font-bold text-primary mb-4">3. Cybersecurity Fundamentals and Ethical Hacking</h2>
+            <div class="w-20 h-1 bg-accent mb-6"></div>
+            <p class="text-xl text-secondary leading-relaxed max-w-4xl">
+              The adversarial mindset that distinguishes security practitioners—combining broad technical knowledge with creative problem-solving to anticipate and prevent exploitation.
+            </p>
+          </div>
+
+          <!-- Learning Difficulty -->
+          <div id="cybersecurity-learning-difficulty" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Learning Difficulty Assessment</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">6–7 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Foundational Concepts</h4>
+                <p class="text-secondary leading-relaxed">
+                  Broad technical knowledge spanning networking, operating systems, cryptography, and risk management combined with distinctive adversarial mindset. Requires extensive lab work and ethical understanding <a href="https://www.msu.edu.in/blog/cyber-security-skills-employers-demand-in-2026-and-how-msu-helps-you-master-them" class="text-accent hover:underline" target="_blank">[520]</a>.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">8–9 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Advanced Penetration Testing</h4>
+                <p class="text-secondary leading-relaxed">
+                  Among the most demanding technical competencies requiring deep systems understanding and creative problem-solving. Modern exploit development confronts substantial defensive evolution requiring multi-stage attack chains <a href="https://research.com/advice/hardest-and-easiest-courses-in-a-cybersecurity-degree-program" class="text-accent hover:underline" target="_blank">[531]</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
+              <div class="flex items-start">
+                <i class="fas fa-exclamation-circle text-red-400 mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-semibold text-red-900 mb-2">Ethical Considerations</h4>
+                  <p class="text-red-800">
+                    Advanced offensive security requires careful construction of isolated environments with explicit authorization. Responsible disclosure practices and clear ethical boundaries must accompany all security tool development <a href="https://www.21kschool.com/in/blog/cybersecurity-projects-for-students/" class="text-accent hover:underline" target="_blank">[528]</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Ideas -->
+          <div id="cybersecurity-projects" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Project Ideas That Impress Admissions</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-trophy text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">CTF Competition Participation</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Sustained participation in Capture The Flag competitions with documented write-ups demonstrating progression across cryptography, reverse engineering, web exploitation, and forensics <a href="https://www.21kschool.com/in/blog/cybersecurity-projects-for-students/" class="text-accent hover:underline" target="_blank">[528]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Cryptography</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Reverse Engineering</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Web Exploitation</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Validation:</strong> Platform rankings, published write-ups, community recognition, and team collaboration experience
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-file-alt text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Vulnerability Assessment Report</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Professional-quality assessment of intentionally vulnerable applications with comprehensive OWASP Top 10 coverage, manual verification, and structured reporting following professional standards <a href="https://www.21kschool.com/in/blog/cybersecurity-projects-for-students/" class="text-accent hover:underline" target="_blank">[528]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">OWASP Top 10</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Manual Testing</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Risk Rating</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Validation:</strong> Report quality, vendor response, remediation verification, and business context integration
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-lock text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Secure Messaging Application</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  End-to-end encrypted messaging with authenticated key exchange using Signal Protocol, forward secrecy, and secure key management. Address formal verification and side-channel resistance <a href="https://www.msu.edu.in/blog/cyber-security-skills-employers-demand-in-2026-and-how-msu-helps-you-master-them" class="text-accent hover:underline" target="_blank">[520]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">End-to-End Encryption</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Double Ratchet</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Cryptography</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Validation:</strong> Security analysis, code review, functional deployment, and open-source community adoption
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-microchip text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">IoT Device Security Analysis</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Firmware extraction, network protocol analysis, and hardware debugging of embedded devices with constrained resources. Produce actionable hardening guides for manufacturers and users <a href="https://www.21kschool.com/in/blog/cybersecurity-projects-for-students/" class="text-accent hover:underline" target="_blank">[528]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Firmware Analysis</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Protocol Reversing</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Hardware Debugging</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Validation:</strong> Device teardown documentation, vulnerability findings, manufacturer engagement, and responsible disclosure
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div id="cybersecurity-timeline" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Time to Basic Competency</h3>
+
+            <div class="space-y-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Networking and Security Fundamentals</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">3–4 Months</div>
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-semibold">120–200 Hours</div>
+                  </div>
+                </div>
+                <p class="text-secondary mb-6 leading-relaxed">
+                  Core competency enabling meaningful participation in guided challenges and basic system administration. Covers networking protocols, operating system internals, and security principles <a href="https://www.msu.edu.in/blog/cyber-security-skills-employers-demand-in-2026-and-how-msu-helps-you-master-them" class="text-accent hover:underline" target="_blank">[520]</a>.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h5 class="font-medium text-primary mb-3">Key Activities</h5>
+                    <ul class="space-y-2 text-sm text-secondary">
+                      <li class="flex items-center"><i class="fas fa-book text-blue-500 mr-2"></i>CompTIA Security+ certification preparation</li>
+                      <li class="flex items-center"><i class="fas fa-network-wired text-blue-500 mr-2"></i>Cisco Networking Academy completion</li>
+                      <li class="flex items-center"><i class="fas fa-terminal text-blue-500 mr-2"></i>TryHackMe/Hack The Box guided practice</li>
+                      <li class="flex items-center"><i class="fas fa-laptop-code text-blue-500 mr-2"></i>Virtual lab configuration and documentation</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-medium text-primary mb-3">Infrastructure Requirements</h5>
+                    <ul class="space-y-2 text-sm text-secondary">
+                      <li class="flex items-center"><i class="fas fa-desktop text-green-500 mr-2"></i>VirtualBox or VMware with vulnerable distributions</li>
+                      <li class="flex items-center"><i class="fas fa-shield-alt text-green-500 mr-2"></i>Metasploitable, DVWA for safe practice</li>
+                      <li class="flex items-center"><i class="fas fa-file-alt text-green-500 mr-2"></i>Documentation of lab configurations</li>
+                      <li class="flex items-center"><i class="fas fa-graduation-cap text-green-500 mr-2"></i>Progress tracking and skill badge accumulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Ethical Hacking and Penetration Testing</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg font-semibold">6–8 Months</div>
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-semibold">250–400 Hours</div>
+                  </div>
+                </div>
+                <p class="text-secondary mb-6 leading-relaxed">
+                  Practical offensive security capabilities with increasing challenge complexity and independence. Progression from guided walkthroughs to professional certification preparation <a href="https://research.com/advice/hardest-and-easiest-courses-in-a-cybersecurity-degree-program" class="text-accent hover:underline" target="_blank">[531]</a>.
+                </p>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-6">
+                  <div class="flex items-start">
+                    <i class="fas fa-route text-yellow-400 mt-1 mr-3"></i>
+                    <div>
+                      <h5 class="font-semibold text-yellow-900 mb-1">Learning Pathway</h5>
+                      <p class="text-yellow-800 text-sm">Guided walkthroughs → Independent challenge completion → Professional certification preparation (OSCP, eJPT)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h5 class="font-medium text-primary mb-3">By 8-Month Milestone</h5>
+                    <ul class="space-y-2 text-sm text-secondary">
+                      <li class="flex items-center"><i class="fas fa-file-code text-green-500 mr-2"></i>Multiple documented penetration testing exercises</li>
+                      <li class="flex items-center"><i class="fas fa-trophy text-green-500 mr-2"></i>CTF competition participation with write-ups</li>
+                      <li class="flex items-center"><i class="fas fa-medal text-green-500 mr-2"></i>Beginning specialization in domains of interest</li>
+                      <li class="flex items-center"><i class="fas fa-users text-green-500 mr-2"></i>Structured program engagement (CyberPatriot)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-medium text-primary mb-3">Portfolio Evidence</h5>
+                    <ul class="space-y-2 text-sm text-secondary">
+                      <li class="flex items-center"><i class="fas fa-folder-open text-blue-500 mr-2"></i>Comprehensive documentation of methodologies</li>
+                      <li class="flex items-center"><i class="fas fa-chart-bar text-blue-500 mr-2"></i>Progression timeline with skill development</li>
+                      <li class="flex items-center"><i class="fas fa-handshake text-blue-500 mr-2"></i>Responsible disclosure case studies</li>
+                      <li class="flex items-center"><i class="fas fa-certificate text-blue-500 mr-2"></i>Professional certification preparation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div id="cybersecurity-tools" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Essential Tools and Platforms</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-crosshairs text-accent mr-3"></i>
+                  Penetration Testing
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-blue-400 pl-4">
+                    <div class="font-medium text-primary">Kali Linux</div>
+                    <div class="text-sm text-secondary">Curated security distribution with integrated tool suite</div>
+                  </div>
+                  <div class="border-l-4 border-green-400 pl-4">
+                    <div class="font-medium text-primary">Metasploit Framework</div>
+                    <div class="text-sm text-secondary">Modular exploitation and payload management</div>
+                  </div>
+                  <div class="border-l-4 border-purple-400 pl-4">
+                    <div class="font-medium text-primary">Burp Suite</div>
+                    <div class="text-sm text-secondary">Web application testing proxy and scanner</div>
+                  </div>
+                  <div class="border-l-4 border-orange-400 pl-4">
+                    <div class="font-medium text-primary">Nmap &amp; Wireshark</div>
+                    <div class="text-sm text-secondary">Network reconnaissance and deep protocol analysis</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-search text-accent mr-3"></i>
+                  Practice Platforms
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-teal-400 pl-4">
+                    <div class="font-medium text-primary">Hack The Box</div>
+                    <div class="text-sm text-secondary">Challenging independent machines with competitive ranking</div>
+                  </div>
+                  <div class="border-l-4 border-red-400 pl-4">
+                    <div class="font-medium text-primary">TryHackMe</div>
+                    <div class="text-sm text-secondary">Guided learning with structured curriculum</div>
+                  </div>
+                  <div class="border-l-4 border-yellow-400 pl-4">
+                    <div class="font-medium text-primary">OverTheWire</div>
+                    <div class="text-sm text-secondary">Specific skill focus with minimal hand-holding</div>
+                  </div>
+                  <div class="border-l-4 border-gray-400 pl-4">
+                    <div class="font-medium text-primary">Virtualization</div>
+                    <div class="text-sm text-secondary">VirtualBox, VMware for isolated lab environments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Science Section -->
+      <section id="data-science" class="px-4 md:px-12 py-16 bg-white">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12">
+            <h2 class="font-serif text-4xl font-bold text-primary mb-4">4. Data Science and Big Data Analytics</h2>
+            <div class="w-20 h-1 bg-accent mb-6"></div>
+            <p class="text-xl text-secondary leading-relaxed max-w-4xl">
+              The evidence-based decision-making foundation that enables organizations to extract actionable insights from vast quantities of structured and unstructured data.
+            </p>
+          </div>
+
+          <!-- Learning Difficulty -->
+          <div id="ds-learning-difficulty" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Learning Difficulty Assessment</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">5–6 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Data Manipulation and Visualization</h4>
+                <p class="text-secondary leading-relaxed">
+                  Accessible to motivated learners with solid quantitative preparation. Immediate visual feedback provides motivating reinforcement. Builds directly on Python programming with moderate additional conceptual demand <a href="https://welovesalt.com/insights/in-demand-technology-skills-industries" class="text-accent hover:underline" target="_blank">[525]</a>.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">7–8 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Statistical Modeling and Large-Scale Analytics</h4>
+                <p class="text-secondary leading-relaxed">
+                  Substantial complexity approaching machine learning and distributed systems domains. Integration of statistical rigor with computational scale represents the distinctive challenge of modern data science <a href="https://welovesalt.com/insights/in-demand-technology-skills-industries" class="text-accent hover:underline" target="_blank">[525]</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
+              <div class="flex items-start">
+                <i class="fas fa-chart-line text-blue-400 mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-semibold text-blue-900 mb-2">Integration Challenge</h4>
+                  <p class="text-blue-800">
+                    Techniques theoretically sound at small scale may fail when distributed, while scalable approaches may sacrifice validity. Effective practitioners navigate these trade-offs with explicit awareness of statistical and computational compromises.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Ideas -->
+          <div id="ds-projects" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Project Ideas That Impress Admissions</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-shield-alt text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Real-time Security Event Dashboard</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Streaming data ingestion and real-time processing for security operations visualization. Includes user research, iterative design, and performance optimization for sub-second response <a href="https://research.com/advice/ai-automation-and-the-future-of-cybersecurity-degree-careers" class="text-accent hover:underline" target="_blank">[514]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Streaming Data</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">User-centered Design</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Performance Optimization</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> Analyst workflow integration with multi-device responsive design and accessibility considerations
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-database text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Big Data Pipeline for Network Logs</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Distributed systems architecture for large-scale log analysis with cloud-native design, schema evolution handling, and operational monitoring. Includes cost-performance trade-off analysis <a href="https://welovesalt.com/insights/in-demand-technology-skills-industries" class="text-accent hover:underline" target="_blank">[525]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Distributed Systems</span>
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Data Engineering</span>
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Cost Optimization</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> Cloud-native architecture with operational monitoring and business impact quantification
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-users text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Customer Churn Prediction Model</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Business analytics application with demographic, behavioral, and transactional data integration. Addresses class imbalance and temporal validation for actionable insight generation <a href="https://welovesalt.com/insights/in-demand-technology-skills-industries" class="text-accent hover:underline" target="_blank">[525]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Business Analytics</span>
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Class Imbalance</span>
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Model Interpretation</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> A/B testing framework for intervention evaluation and real-time scoring architecture
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-comments text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Social Media Sentiment Analysis</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  NLP application combining API-based data collection with text preprocessing for informal language. Includes aspect-based sentiment, bot detection, and cross-platform aggregation <a href="https://www.nit.ac.in/blog/rise-of-artificial-intelligence-in-cse-skills-for-2026" class="text-accent hover:underline" target="_blank">[513]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">NLP</span>
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Streaming Data</span>
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Temporal Dynamics</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Differentiator:</strong> Aspect-based sentiment for granular insight and influence operation identification
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div id="ds-timeline" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Time to Basic Competency</h3>
+
+            <div class="space-y-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Data Manipulation and SQL</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-green-100 text-green-800 px-4 py-2 rounded-lg font-semibold">2–3 Months</div>
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-semibold">80–150 Hours</div>
+                  </div>
+                </div>
+                <p class="text-secondary mb-6 leading-relaxed">
+                  Core competency enabling effective data acquisition, cleaning, exploration, and communication. Requires Python proficiency and basic statistics foundation <a href="https://welovesalt.com/insights/in-demand-technology-skills-industries" class="text-accent hover:underline" target="_blank">[525]</a>.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-green-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-green-900 mb-3">SQL Mastery</h5>
+                    <ul class="space-y-2 text-sm text-green-800">
+                      <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Complex joins and window functions</li>
+                      <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Query optimization techniques</li>
+                      <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Data modeling and schema design</li>
+                    </ul>
+                  </div>
+                  <div class="bg-blue-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-blue-900 mb-3">Visualization</h5>
+                    <ul class="space-y-2 text-sm text-blue-800">
+                      <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Iterative design with feedback</li>
+                      <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Effective graphical communication</li>
+                      <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Dashboard development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Advanced Analytics and Big Data Tools</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg font-semibold">4–6 Months</div>
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-semibold">200–350 Hours</div>
+                  </div>
+                </div>
+                <p class="text-secondary mb-6 leading-relaxed">
+                  Production-quality data science with distributed processing capabilities. Requires conceptual adjustment from single-machine paradigms to distributed computing models <a href="https://welovesalt.com/insights/in-demand-technology-skills-industries" class="text-accent hover:underline" target="_blank">[525]</a>.
+                </p>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-6">
+                  <div class="flex items-start">
+                    <i class="fas fa-cloud text-yellow-400 mt-1 mr-3"></i>
+                    <div>
+                      <h5 class="font-semibold text-yellow-900 mb-1">Cloud Certification Pathway</h5>
+                      <p class="text-yellow-800 text-sm">AWS Data Analytics, Google Professional Data Engineer, or Azure Data Scientist Associate certifications can structure preparation while providing externally validated credentials.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-orange-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-orange-900 mb-3">Distributed Computing</h5>
+                    <ul class="space-y-2 text-sm text-orange-800">
+                      <li>• Apache Spark &amp; Hadoop</li>
+                      <li>• Data partitioning strategies</li>
+                      <li>• Fault tolerance mechanisms</li>
+                    </ul>
+                  </div>
+                  <div class="bg-purple-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-purple-900 mb-3">Big Data Platforms</h5>
+                    <ul class="space-y-2 text-sm text-purple-800">
+                      <li>• Data pipeline engineering</li>
+                      <li>• Performance optimization</li>
+                      <li>• MLOps integration</li>
+                    </ul>
+                  </div>
+                  <div class="bg-teal-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-teal-900 mb-3">Production Systems</h5>
+                    <ul class="space-y-2 text-sm text-teal-800">
+                      <li>• Monitoring and maintenance</li>
+                      <li>• Model deployment</li>
+                      <li>• Evolution and scaling</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div id="ds-tools" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Essential Tools and Platforms</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-database text-accent mr-3"></i>
+                  Databases &amp; Storage
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-blue-400 pl-4">
+                    <div class="font-medium text-primary">PostgreSQL &amp; MySQL</div>
+                    <div class="text-sm text-secondary">Advanced relational features and web application backends</div>
+                  </div>
+                  <div class="border-l-4 border-green-400 pl-4">
+                    <div class="font-medium text-primary">MongoDB</div>
+                    <div class="text-sm text-secondary">Flexible schema and horizontal scaling for document data</div>
+                  </div>
+                  <div class="border-l-4 border-purple-400 pl-4">
+                    <div class="font-medium text-primary">Specialized Systems</div>
+                    <div class="text-sm text-secondary">Redis for caching, Elasticsearch for search, Neo4j for graph analytics</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-cloud text-accent mr-3"></i>
+                  Big Data Platforms
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-orange-400 pl-4">
+                    <div class="font-medium text-primary">Apache Spark</div>
+                    <div class="text-sm text-secondary">In-memory execution and DataFrame API for interactive processing</div>
+                  </div>
+                  <div class="border-l-4 border-teal-400 pl-4">
+                    <div class="font-medium text-primary">Hadoop Ecosystem</div>
+                    <div class="text-sm text-secondary">Batch processing and MapReduce for legacy deployments</div>
+                  </div>
+                  <div class="border-l-4 border-red-400 pl-4">
+                    <div class="font-medium text-primary">Databricks</div>
+                    <div class="text-sm text-secondary">Managed Spark with collaborative notebooks and MLflow integration</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Critical Thinking Section -->
+      <section id="critical-thinking" class="px-4 md:px-12 py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12">
+            <h2 class="font-serif text-4xl font-bold text-primary mb-4">5. Critical Thinking and Problem-Solving</h2>
+            <div class="w-20 h-1 bg-accent mb-6"></div>
+            <p class="text-xl text-secondary leading-relaxed max-w-4xl">
+              The meta-skill that amplifies all technical capabilities—the deliberate, improvable ability to analyze complex problems, recognize cognitive biases, and make sound decisions under uncertainty.
+            </p>
+          </div>
+
+          <!-- Learning Difficulty -->
+          <div id="ct-learning-difficulty" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Learning Difficulty Assessment</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">4–5 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Foundational Development</h4>
+                <p class="text-secondary leading-relaxed">
+                  Deliberate, improvable skill distinct from general intelligence. Foundational development encompasses reasoning frameworks, cognitive bias recognition, and systematic problem decomposition <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center mb-4">
+                  <div class="flex items-center space-x-2 mr-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                  </div>
+                  <span class="font-semibold text-lg">8–9 / 10</span>
+                </div>
+                <h4 class="font-semibold text-lg text-primary mb-3">Mastery in High-Pressure Contexts</h4>
+                <p class="text-secondary leading-relaxed">
+                  Expert-level critical thinking under complex, ambiguous, time-constrained conditions requiring years of deliberate practice. Demands extensive domain knowledge, emotional regulation, and well-calibrated confidence <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-indigo-50 border-l-4 border-indigo-400 p-6 rounded-r-lg">
+              <div class="flex items-start">
+                <i class="fas fa-brain text-indigo-400 mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-semibold text-indigo-900 mb-2">Development Trajectory</h4>
+                  <p class="text-indigo-800">
+                    For undergraduate applicants, demonstrating trajectory toward mastery—through documented handling of challenging situations, reflective practice, and explicit engagement with cognitive bias mitigation—provides evidence of growth potential even without claiming expertise.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Ideas -->
+          <div id="ct-projects" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Project Ideas That Impress Admissions</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-exclamation-triangle text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Post-Mortem Analysis of Failed Project</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Explicit failure analysis demonstrating maturity and growth orientation. Move beyond superficial attribution to systematic factor analysis with specific evidence and behavioral change documentation <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Growth Mindset</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Systematic Reflection</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Communication Courage</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Documentation:</strong> Detailed contributing factor analysis, alternative consideration, and behavioral change evidence through publication
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-users text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Multi-Disciplinary Team Project</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Complex team project spanning AI, security, and business considerations with explicit role definition, conflict resolution processes, and stakeholder management. Demonstrates collaborative problem-solving under realistic constraints <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Collaboration</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Negotiation</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Cross-domain Integration</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Documentation:</strong> Role definition, conflict resolution, stakeholder feedback, and outcome evaluation with external validation
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-microphone text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Technical Communication Series</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Science communication demonstrating mastery through teaching—explaining complex AI and security concepts to non-technical audiences. Requires audience analysis, progressive disclosure, and anticipatory misconception addressing <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Mastery through Teaching</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Audience Adaptation</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Sustained Commitment</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Documentation:</strong> Publication metrics, audience feedback, iterative improvement demonstration with platform selection evidence
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-code-branch text-accent text-2xl mr-4"></i>
+                  <h4 class="font-semibold text-lg text-primary">Open-Source Contribution</h4>
+                </div>
+                <p class="text-secondary mb-4 leading-relaxed">
+                  Meaningful participation demonstrating collaborative development practices, code quality standards, and community navigation. Moves beyond documentation fixes to substantive issue resolution with design discussion and review iteration <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Collaborative Development</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Code Quality</span>
+                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Community Navigation</span>
+                </div>
+                <div class="text-sm text-secondary">
+                  <strong>Documentation:</strong> Contribution history, review iteration, maintainer relationship, and increasing responsibility with community engagement
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div id="ct-timeline" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Time to Basic Competency</h3>
+
+            <div class="space-y-8">
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Conscious Practice and Structured Reflection</h4>
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-green-100 text-green-800 px-4 py-2 rounded-lg font-semibold">3–6 Months</div>
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-semibold">60–120 Hours</div>
+                  </div>
+                </div>
+                <p class="text-secondary mb-6 leading-relaxed">
+                  Developing observable improvement in analytical reasoning through explicit methodology adoption, regular practice with feedback, and integration with technical work for contextual application <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="bg-green-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-green-900 mb-3">Methodology Adoption</h5>
+                    <ul class="space-y-2 text-sm text-green-800">
+                      <li>• Structured analytical techniques</li>
+                      <li>• Decision journals and pre-mortems</li>
+                      <li>• Cognitive bias recognition</li>
+                    </ul>
+                  </div>
+                  <div class="bg-blue-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-blue-900 mb-3">Practice with Feedback</h5>
+                    <ul class="space-y-2 text-sm text-blue-800">
+                      <li>• Peer discussion and review</li>
+                      <li>• Mentor guidance</li>
+                      <li>• Self-assessment rubrics</li>
+                    </ul>
+                  </div>
+                  <div class="bg-purple-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-purple-900 mb-3">Contextual Integration</h5>
+                    <ul class="space-y-2 text-sm text-purple-800">
+                      <li>• Technical project application</li>
+                      <li>• Real-world problem solving</li>
+                      <li>• Measurable outcome documentation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-semibold text-lg text-primary">Integration with Technical Work for Demonstrated Impact</h4>
+                  <div class="bg-orange-100 text-orange-800 px-4 py-2 rounded-lg font-semibold">6–12 Months</div>
+                </div>
+                <p class="text-secondary mb-6 leading-relaxed">
+                  Translating critical thinking development into portfolio-evident outcomes through sustained project engagement where improved thinking produces measurable results. Essential for admission impact <a href="https://www.linkedin.com/posts/imranjalali_top-high-demand-high-paying-skills-in-2026-activity-7416595212006940672-bI71" class="text-accent hover:underline" target="_blank">[526]</a>.
+                </p>
+                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg">
+                  <div class="flex items-start">
+                    <i class="fas fa-target text-orange-400 mt-1 mr-3"></i>
+                    <div>
+                      <h5 class="font-semibold text-orange-900 mb-1">Portfolio Impact Focus</h5>
+                      <p class="text-orange-800 text-sm">Abstract claims carry less weight than documented problem-solving outcomes. The integration phase is essential for demonstrating practical application of critical thinking skills.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div id="ct-tools" class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold text-primary mb-8">Essential Tools and Platforms</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-users text-accent mr-3"></i>
+                  Collaboration &amp; Documentation
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-blue-400 pl-4">
+                    <div class="font-medium text-primary">GitHub</div>
+                    <div class="text-sm text-secondary">Version control, portfolio hosting, issue management</div>
+                  </div>
+                  <div class="border-l-4 border-green-400 pl-4">
+                    <div class="font-medium text-primary">Notion/Obsidian</div>
+                    <div class="text-sm text-secondary">Personal knowledge management and thinking process documentation</div>
+                  </div>
+                  <div class="border-l-4 border-purple-400 pl-4">
+                    <div class="font-medium text-primary">Confluence/Notion (Team)</div>
+                    <div class="text-sm text-secondary">Team documentation, decision records, knowledge sharing</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                <h4 class="font-semibold text-lg text-primary mb-4 flex items-center">
+                  <i class="fas fa-graduation-cap text-accent mr-3"></i>
+                  Learning &amp; Development
+                </h4>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-orange-400 pl-4">
+                    <div class="font-medium text-primary">Case Study Repositories</div>
+                    <div class="text-sm text-secondary">Harvard Business Review, engineering post-mortem collections</div>
+                  </div>
+                  <div class="border-l-4 border-teal-400 pl-4">
+                    <div class="font-medium text-primary">Peer Review Networks</div>
+                    <div class="text-sm text-secondary">Study groups, online communities, professional associations</div>
+                  </div>
+                  <div class="border-l-4 border-red-400 pl-4">
+                    <div class="font-medium text-primary">Mentorship Programs</div>
+                    <div class="text-sm text-secondary">Formal programs, informal relationships, community engagement</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Strategic Synthesis Section -->
+      <section id="strategic-synthesis" class="px-4 md:px-12 py-16 bg-gradient-to-br from-slate-900 to-slate-700 text-white">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12">
+            <h2 class="font-serif text-4xl font-bold mb-4">Strategic Synthesis and Recommendations</h2>
+            <div class="w-20 h-1 bg-accent mb-6"></div>
+            <p class="text-xl text-gray-300 leading-relaxed max-w-4xl">
+              Actionable guidance for developing competitive advantage through strategic skill integration and timeline planning for 2026-2027 university admissions.
+            </p>
+          </div>
+
+          <!-- Skill Interaction Diagram -->
+          <div class="mb-16">
+            <h3 class="font-serif text-2xl font-semibold mb-8">Skill Interaction and Synergy</h3>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8">
+              <div class="mermaid-container">
+                <div class="mermaid-controls">
+                  <button class="mermaid-control-btn zoom-in" title="放大">
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                  <button class="mermaid-control-btn zoom-out" title="缩小">
+                    <i class="fas fa-search-minus"></i>
+                  </button>
+                  <button class="mermaid-control-btn reset-zoom" title="重置">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                  </button>
+                  <button class="mermaid-control-btn fullscreen" title="全屏查看">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+                <div class="mermaid">
+                  graph TD
+                  A[&#34;Python Programming&#34;] --&gt; B[&#34;Machine Learning&#34;]
+                  A --&gt; C[&#34;Cybersecurity&#34;]
+                  A --&gt; D[&#34;Data Science&#34;]
+                  B --&gt; E[&#34;Critical Thinking&#34;]
+                  C --&gt; E
+                  D --&gt; E
+                  E --&gt; F[&#34;University Admission Success&#34;]
+
+                  B --&gt; G[&#34;AI-Aware Security Systems&#34;]
+                  C --&gt; G
+                  D --&gt; H[&#34;Evidence-Based Decisions&#34;]
+                  E --&gt; I[&#34;Effective Communication&#34;]
+
+                  G --&gt; F
+                  H --&gt; F
+                  I --&gt; F
+
+                  style A fill:#3b82f6,color:#ffffff,stroke:#1e40af,stroke-width:2px,font-weight:bold
+                  style B fill:#10b981,color:#ffffff,stroke:#047857,stroke-width:2px,font-weight:bold
+                  style C fill:#f59e0b,color:#ffffff,stroke:#b45309,stroke-width:2px,font-weight:bold
+                  style D fill:#8b5cf6,color:#ffffff,stroke:#6d28d9,stroke-width:2px,font-weight:bold
+                  style E fill:#ec4899,color:#ffffff,stroke:#be185d,stroke-width:2px,font-weight:bold
+                  style F fill:#14b8a6,color:#ffffff,stroke:#0f766e,stroke-width:3px,font-weight:bold
+                  style G fill:#06b6d4,color:#ffffff,stroke:#0891b2,stroke-width:2px,font-weight:bold
+                  style H fill:#84cc16,color:#ffffff,stroke:#65a30d,stroke-width:2px,font-weight:bold
+                  style I fill:#f97316,color:#ffffff,stroke:#ea580c,stroke-width:2px,font-weight:bold
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strategic Framework -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8">
+              <h3 class="font-serif text-2xl font-semibold mb-6">Admission Strategy Implications</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">1</div>
+                  <div>
+                    <h4 class="font-semibold mb-2">Selective Depth Over Breadth</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">Choose 2–3 skills for primary depth rather than superficial coverage across all five. Demonstrate skill integration in flagship projects.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">2</div>
+                  <div>
+                    <h4 class="font-semibold mb-2">Integration Demonstration</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">Provide evidence of sustained engagement rather than last-minute preparation. Technical skills provide concrete portfolio content; soft skills elevate presentation quality.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">3</div>
+                  <div>
+                    <h4 class="font-semibold mb-2">AI-Cybersecurity Convergence</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">Projects demonstrating intersection of machine learning and security position applicants advantageously for programs emphasizing this integration.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8">
+              <h3 class="font-serif text-2xl font-semibold mb-6">Timeline Planning for 2026–2027</h3>
+              <div class="space-y-4">
+                <div class="flex items-center p-4 bg-white/20 rounded-lg">
+                  <div class="bg-green-400 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-4">1</div>
+                  <div class="flex-1">
+                    <div class="font-semibold text-sm">Foundation Building</div>
+                    <div class="text-xs text-gray-300">Months 1–3 • Python fundamentals, mathematical preparation</div>
+                  </div>
+                </div>
+                <div class="flex items-center p-4 bg-white/20 rounded-lg">
+                  <div class="bg-blue-400 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-4">2</div>
+                  <div class="flex-1">
+                    <div class="font-semibold text-sm">Core Competency Development</div>
+                    <div class="text-xs text-gray-300">Months 4–9 • Selected skill depth, substantial projects</div>
+                  </div>
+                </div>
+                <div class="flex items-center p-4 bg-white/20 rounded-lg">
+                  <div class="bg-purple-400 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-4">3</div>
+                  <div class="flex-1">
+                    <div class="font-semibold text-sm">Portfolio Refinement</div>
+                    <div class="text-xs text-gray-300">Months 10–15 • Project polish, documentation quality</div>
+                  </div>
+                </div>
+                <div class="flex items-center p-4 bg-white/20 rounded-lg">
+                  <div class="bg-pink-400 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-4">4</div>
+                  <div class="flex-1">
+                    <div class="font-semibold text-sm">Application Execution</div>
+                    <div class="text-xs text-gray-300">Months 12–18 • Essays, interview preparation, recommendations</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final Recommendations -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8">
+            <h3 class="font-serif text-2xl font-semibold mb-6">Key Success Factors</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="text-center">
+                <div class="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-project-diagram text-2xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Portfolio Quality</h4>
+                <p class="text-gray-300 text-sm">Focus on 2-3 substantial projects demonstrating skill integration rather than breadth of shallow tutorials.</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-timeline text-2xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Sustained Engagement</h4>
+                <p class="text-gray-300 text-sm">Document consistent progress over 12-18 months rather than last-minute preparation before applications.</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-puzzle-piece text-2xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Skill Integration</h4>
+                <p class="text-gray-300 text-sm">Demonstrate intersection of AI and cybersecurity through projects that address challenges at their convergence.</p>
+              </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-accent/20 rounded-lg border border-accent/30">
+              <div class="flex items-start">
+                <i class="fas fa-lightbulb text-accent mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-semibold text-white mb-2">Final Insight</h4>
+                  <p class="text-gray-300 text-sm leading-relaxed">
+                    Success in 2026 university admissions requires balancing technical depth with demonstrated soft skills, built through substantial portfolio projects rather than tutorial completion. The convergence of AI and cybersecurity represents the most significant opportunity for differentiation, with 67% of cybersecurity roles now requiring AI proficiency and demand for hybrid expertise projected to grow 30% within five years.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+        // Toggle TOC on mobile
+        const tocToggle = document.getElementById('toc-toggle');
+        const tocNav = document.getElementById('toc-nav');
+        
+        tocToggle.addEventListener('click', () => {
+            tocNav.classList.toggle('-translate-x-full');
+        });
+        
+        // Close TOC when clicking on a link (mobile)
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 768) {
+                    tocNav.classList.add('-translate-x-full');
+                }
+            });
+        });
+
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#3b82f6',
+                primaryTextColor: '#ffffff',
+                primaryBorderColor: '#1e40af',
+                lineColor: '#64748b',
+                sectionBkgColor: '#f8fafc',
+                altSectionBkgColor: '#ffffff',
+                gridColor: '#e2e8f0',
+                secondaryColor: '#10b981',
+                secondaryTextColor: '#ffffff',
+                secondaryBorderColor: '#047857',
+                tertiaryColor: '#f59e0b',
+                tertiaryTextColor: '#ffffff',
+                tertiaryBorderColor: '#b45309',
+                // Enhanced contrast settings
+                nodeBkg: '#3b82f6',
+                nodeTextColor: '#ffffff',
+                mainBkg: '#ffffff',
+                secondBkg: '#f8fafc',
+                tertiaryBkg: '#f1f5f9',
+                // Text colors for better contrast
+                textColor: '#1e293b',
+                darkTextColor: '#1e293b',
+                // Ensure high contrast for different node types
+                cScale0: '#3b82f6',
+                cScale1: '#10b981', 
+                cScale2: '#f59e0b',
+                cScale3: '#8b5cf6',
+                cScale4: '#ec4899',
+                cScale5: '#14b8a6',
+                cScale6: '#06b6d4',
+                cScale7: '#84cc16'
+            },
+            flowchart: {
+                useMaxWidth: false,
+                htmlLabels: true,
+                curve: 'basis',
+                padding: 20
+            },
+            fontSize: 14,
+            fontFamily: 'Inter, sans-serif'
+        });
+
+        // Initialize Mermaid Controls for zoom and pan
+        function initializeMermaidControls() {
+            const containers = document.querySelectorAll('.mermaid-container');
+
+            containers.forEach(container => {
+            const mermaidElement = container.querySelector('.mermaid');
+            let scale = 1;
+            let isDragging = false;
+            let startX, startY, translateX = 0, translateY = 0;
+
+            // 触摸相关状态
+            let isTouch = false;
+            let touchStartTime = 0;
+            let initialDistance = 0;
+            let initialScale = 1;
+            let isPinching = false;
+
+            // Zoom controls
+            const zoomInBtn = container.querySelector('.zoom-in');
+            const zoomOutBtn = container.querySelector('.zoom-out');
+            const resetBtn = container.querySelector('.reset-zoom');
+            const fullscreenBtn = container.querySelector('.fullscreen');
+
+            function updateTransform() {
+                mermaidElement.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+
+                if (scale > 1) {
+                container.classList.add('zoomed');
+                } else {
+                container.classList.remove('zoomed');
+                }
+
+                mermaidElement.style.cursor = isDragging ? 'grabbing' : 'grab';
+            }
+
+            if (zoomInBtn) {
+                zoomInBtn.addEventListener('click', () => {
+                scale = Math.min(scale * 1.25, 4);
+                updateTransform();
+                });
+            }
+
+            if (zoomOutBtn) {
+                zoomOutBtn.addEventListener('click', () => {
+                scale = Math.max(scale / 1.25, 0.3);
+                if (scale <= 1) {
+                    translateX = 0;
+                    translateY = 0;
+                }
+                updateTransform();
+                });
+            }
+
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+                });
+            }
+
+            if (fullscreenBtn) {
+                fullscreenBtn.addEventListener('click', () => {
+                if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                } else if (container.webkitRequestFullscreen) {
+                    container.webkitRequestFullscreen();
+                } else if (container.msRequestFullscreen) {
+                    container.msRequestFullscreen();
+                }
+                });
+            }
+
+            // Mouse Events
+            mermaidElement.addEventListener('mousedown', (e) => {
+                if (isTouch) return; // 如果是触摸设备，忽略鼠标事件
+
+                isDragging = true;
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                mermaidElement.style.cursor = 'grabbing';
+                updateTransform();
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging && !isTouch) {
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (isDragging && !isTouch) {
+                isDragging = false;
+                mermaidElement.style.cursor = 'grab';
+                updateTransform();
+                }
+            });
+
+            document.addEventListener('mouseleave', () => {
+                if (isDragging && !isTouch) {
+                isDragging = false;
+                mermaidElement.style.cursor = 'grab';
+                updateTransform();
+                }
+            });
+
+            // 获取两点之间的距离
+            function getTouchDistance(touch1, touch2) {
+                return Math.hypot(
+                touch2.clientX - touch1.clientX,
+                touch2.clientY - touch1.clientY
+                );
+            }
+
+            // Touch Events - 触摸事件处理
+            mermaidElement.addEventListener('touchstart', (e) => {
+                isTouch = true;
+                touchStartTime = Date.now();
+
+                if (e.touches.length === 1) {
+                // 单指拖动
+                isPinching = false;
+                isDragging = true;
+
+                const touch = e.touches[0];
+                startX = touch.clientX - translateX;
+                startY = touch.clientY - translateY;
+
+                } else if (e.touches.length === 2) {
+                // 双指缩放
+                isPinching = true;
+                isDragging = false;
+
+                const touch1 = e.touches[0];
+                const touch2 = e.touches[1];
+                initialDistance = getTouchDistance(touch1, touch2);
+                initialScale = scale;
+                }
+
+                e.preventDefault();
+            }, { passive: false });
+
+            mermaidElement.addEventListener('touchmove', (e) => {
+                if (e.touches.length === 1 && isDragging && !isPinching) {
+                // 单指拖动
+                const touch = e.touches[0];
+                translateX = touch.clientX - startX;
+                translateY = touch.clientY - startY;
+                updateTransform();
+
+                } else if (e.touches.length === 2 && isPinching) {
+                // 双指缩放
+                const touch1 = e.touches[0];
+                const touch2 = e.touches[1];
+                const currentDistance = getTouchDistance(touch1, touch2);
+
+                if (initialDistance > 0) {
+                    const newScale = Math.min(Math.max(
+                    initialScale * (currentDistance / initialDistance),
+                    0.3
+                    ), 4);
+                    scale = newScale;
+                    updateTransform();
+                }
+                }
+
+                e.preventDefault();
+            }, { passive: false });
+
+            mermaidElement.addEventListener('touchend', (e) => {
+                // 重置状态
+                if (e.touches.length === 0) {
+                isDragging = false;
+                isPinching = false;
+                initialDistance = 0;
+
+                // 延迟重置isTouch，避免鼠标事件立即触发
+                setTimeout(() => {
+                    isTouch = false;
+                }, 100);
+                } else if (e.touches.length === 1 && isPinching) {
+                // 从双指变为单指，切换为拖动模式
+                isPinching = false;
+                isDragging = true;
+
+                const touch = e.touches[0];
+                startX = touch.clientX - translateX;
+                startY = touch.clientY - translateY;
+                }
+
+                updateTransform();
+            });
+
+            mermaidElement.addEventListener('touchcancel', (e) => {
+                isDragging = false;
+                isPinching = false;
+                initialDistance = 0;
+
+                setTimeout(() => {
+                isTouch = false;
+                }, 100);
+
+                updateTransform();
+            });
+
+            // Enhanced wheel zoom with better center point handling
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const rect = container.getBoundingClientRect();
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const delta = e.deltaY > 0 ? 0.9 : 1.1;
+                const newScale = Math.min(Math.max(scale * delta, 0.3), 4);
+
+                // Adjust translation to zoom towards center
+                if (newScale !== scale) {
+                const scaleDiff = newScale / scale;
+                translateX = translateX * scaleDiff;
+                translateY = translateY * scaleDiff;
+                scale = newScale;
+
+                if (scale <= 1) {
+                    translateX = 0;
+                    translateY = 0;
+                }
+
+                updateTransform();
+                }
+            });
+
+            // Initialize display
+            updateTransform();
+            });
+        }
+
+        // Toggle TOC on mobile
+        const tocToggle = document.getElementById('toc-toggle');
+        const tocNav = document.getElementById('toc-nav');
+        
+        tocToggle.addEventListener('click', () => {
+            tocNav.classList.toggle('-translate-x-full');
+        });
+        
+        // Close TOC when clicking on a link (mobile)
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 768) {
+                    tocNav.classList.add('-translate-x-full');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in TOC
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        function highlightActiveSection() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('text-accent', 'font-semibold');
+                link.classList.add('text-secondary');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-secondary');
+                    link.classList.add('text-accent', 'font-semibold');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightActiveSection);
+        highlightActiveSection(); // Run once on load
+
+        // Initialize mermaid controls
+        initializeMermaidControls();
+    </script>
+  
+
+</body></html>

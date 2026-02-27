@@ -1,0 +1,1382 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>World&#39;s Leading Computer Science Programs: AI Engineering &amp; Cybersecurity Focus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #f8fafc;
+            --accent: #3b82f6;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border: #e2e8f0;
+        }
+        
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .toc-fixed {
+            position: fixed;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 280px;
+            max-height: 70vh;
+            overflow-y: auto;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .main-content {
+            margin-left: 320px;
+            max-width: 900px;
+        }
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .citation-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            padding: 0.125rem 0.375rem;
+            border-radius: 4px;
+            background: rgba(59, 130, 246, 0.1);
+            transition: all 0.2s ease;
+        }
+        
+        .citation-link:hover {
+            background: rgba(59, 130, 246, 0.2);
+            transform: translateY(-1px);
+        }
+        
+        .program-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .program-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .ranking-badge {
+            display: inline-flex;
+            align-items: center;
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        
+    @media (max-width: 1280px) {
+        .toc-fixed {
+            display: none;
+        }
+        .main-content {
+            margin-left: 0;
+            max-width: 100%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .bento-grid {
+            grid-template-columns: 1fr;
+        }
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .main-content {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        .hero-gradient h1 {
+            font-size: 2.25rem;
+        }
+        .hero-gradient p {
+            font-size: 0.875rem;
+        }
+    }
+    </style>
+  <base target="_blank">
+</head>
+
+  <body class="bg-gray-50">
+    <!-- Fixed Table of Contents -->
+    <nav class="toc-fixed">
+      <h3 class="serif font-semibold text-lg mb-4 text-gray-800">Contents</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#executive-summary" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Executive Summary</a>
+        </li>
+        <li>
+          <a href="#methodology" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Selection Methodology</a>
+        </li>
+        <li>
+          <a href="#us-institutions" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">United States</a>
+        </li>
+        <li class="ml-3">
+          <a href="#mit" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">MIT</a>
+        </li>
+        <li class="ml-3">
+          <a href="#stanford" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">Stanford</a>
+        </li>
+        <li class="ml-3">
+          <a href="#cmu" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">Carnegie Mellon</a>
+        </li>
+        <li class="ml-3">
+          <a href="#berkeley" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">UC Berkeley</a>
+        </li>
+        <li>
+          <a href="#europe" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">European Institutions</a>
+        </li>
+        <li class="ml-3">
+          <a href="#eth" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">ETH Zurich</a>
+        </li>
+        <li class="ml-3">
+          <a href="#oxford" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">Oxford</a>
+        </li>
+        <li class="ml-3">
+          <a href="#cambridge" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">Cambridge</a>
+        </li>
+        <li>
+          <a href="#asia" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Asian Institutions</a>
+        </li>
+        <li class="ml-3">
+          <a href="#nus" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">NUS Singapore</a>
+        </li>
+        <li>
+          <a href="#canada" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Canadian Institutions</a>
+        </li>
+        <li class="ml-3">
+          <a href="#toronto" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">University of Toronto</a>
+        </li>
+        <li class="ml-3">
+          <a href="#waterloo" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">University of Waterloo</a>
+        </li>
+        <li>
+          <a href="#spanish" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Spanish-Speaking Programs</a>
+        </li>
+        <li class="ml-3">
+          <a href="#ie" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">IE University</a>
+        </li>
+        <li class="ml-3">
+          <a href="#malaga" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-600">University of Málaga</a>
+        </li>
+        <li>
+          <a href="#comparison" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Comparative Analysis</a>
+        </li>
+        <li>
+          <a href="#timeline" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Application Timeline</a>
+        </li>
+        <li>
+          <a href="#recommendations" class="block py-1 px-2 rounded hover:bg-gray-100 transition-colors">Final Recommendations</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content mx-auto px-8 py-12">
+      <!-- Hero Section -->
+      <section class="mb-16">
+        <div class="hero-gradient rounded-3xl p-8 mb-8 text-white relative overflow-hidden">
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+          <div class="relative z-10">
+            <div class="bento-grid">
+              <div>
+                <h1 class="serif text-5xl font-bold mb-6 leading-tight">
+                  <em>World&#39;s Leading</em>
+                  <br/>
+                  Computer Science Programs
+                </h1>
+                <p class="text-xl mb-6 opacity-90">Undergraduate education at the intersection of AI Engineering and Cybersecurity</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="ranking-badge">
+                    <i class="fas fa-trophy mr-1"></i>
+                    Global Top 10
+                  </span>
+                  <span class="ranking-badge">
+                    <i class="fas fa-shield-alt mr-1"></i>
+                    AI + Cybersecurity Focus
+                  </span>
+                  <span class="ranking-badge">
+                    <i class="fas fa-globe mr-1"></i>
+                    Multi-Geographic
+                  </span>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="https://kimi-web-img.moonshot.cn/img/m.media-amazon.com/bac3505e76bdc83c8d2ff52a1bc18b6d49604ca4.jpg" alt="Artificial intelligence and cybersecurity technology concept" class="rounded-xl opacity-80 max-w-full h-64 object-cover" size="medium" aspect="wide" query="artificial intelligence cybersecurity technology" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section id="executive-summary" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-6 text-gray-800">Executive Summary</h2>
+          <div class="prose prose-lg max-w-none">
+            <p class="text-xl leading-relaxed mb-6 text-gray-700">
+              The world&#39;s top 10 Computer Science undergraduate programs with exceptional focus in <strong>both</strong> AI Engineering and Cybersecurity represent <strong>an elite tier of global institutions</strong> that transcend traditional rankings by delivering genuine expertise in these critical technology domains.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+              <div class="bg-blue-50 p-6 rounded-xl">
+                <h3 class="font-semibold text-lg mb-3 text-blue-900">Cost Range &amp; Value</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>€1,600-2,700/year:</strong> University of Málaga (most affordable)</li>
+                  <li><strong>~$6,000-8,500/year:</strong> NUS with subsidy (best value top-tier)</li>
+                  <li><strong>~$3,200/year:</strong> ETH Zurich tuition (lowest European)</li>
+                  <li><strong>~$87,000/year:</strong> Stanford/CMU total cost (premium private)</li>
+                </ul>
+              </div>
+              <div class="bg-green-50 p-6 rounded-xl">
+                <h3 class="font-semibold text-lg mb-3 text-green-900">Selectivity Spectrum</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Ultra-selective:</strong> MIT/Stanford (~4-7% acceptance)</li>
+                  <li><strong>Highly selective:</strong> CMU SCS (7% vs 26% other colleges)</li>
+                  <li><strong>Moderately selective:</strong> European options with language flexibility</li>
+                  <li><strong>Accessible:</strong> Spanish programs with B2 language options</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="text-lg leading-relaxed text-gray-700">
+              <strong>Carnegie Mellon University emerges as the singular global leader</strong> in AI-Cybersecurity integration, having launched the first Bachelor of Science in Artificial Intelligence in 2018 while simultaneously housing CyLab—the world&#39;s largest university-based cybersecurity research center. For Spanish-speaking applicants, the <strong>University of Málaga offers unprecedented value</strong> with an explicitly named dual-focus degree at approximately 1/50th the cost of US private alternatives.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selection Methodology -->
+      <section id="methodology" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">Program Selection Methodology</h2>
+
+          <div class="mb-8">
+            <h3 class="serif text-2xl font-semibold mb-4 text-gray-700">Ranking Criteria Framework</h3>
+            <p class="text-lg mb-6 text-gray-700">
+              Our methodology employs a comprehensive multi-dimensional evaluation framework that prioritizes <strong>institutional excellence, disciplinary strength, programmatic accessibility, and research output</strong> to ensure recommended programs genuinely deliver world-class education in both AI engineering and cybersecurity.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="space-y-6">
+              <div class="border-l-4 border-blue-500 pl-6">
+                <h4 class="font-semibold text-lg mb-2">Global Rankings Integration</h4>
+                <p class="text-gray-700 mb-3">Foundation built on QS World University Rankings, Times Higher Education, and ARWU for comprehensive institutional assessment.</p>
+                <p class="text-sm text-gray-600">MIT maintains #1 position for eleven consecutive years <a href="https://www.prepscholar.com/sat/s/colleges/MIT-admission-requirements" class="citation-link" target="_blank">[569]</a>
+                </p>
+              </div>
+
+              <div class="border-l-4 border-green-500 pl-6">
+                <h4 class="font-semibold text-lg mb-2">Dual Disciplinary Strength</h4>
+                <p class="text-gray-700 mb-3">Evaluation of dedicated research centers, faculty publications, industry partnerships, and specialized coursework in both domains.</p>
+                <p class="text-sm text-gray-600">CMU exemplifies dual excellence with first AI bachelor&#39;s degree and CyLab <a href="https://www.cs.cmu.edu/bs-in-artificial-intelligence/index" class="citation-link" target="_blank">[517]</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <div class="border-l-4 border-purple-500 pl-6">
+                <h4 class="font-semibold text-lg mb-2">Language Accessibility</h4>
+                <p class="text-gray-700 mb-3">Preference for English or Spanish instruction with verification of program availability and support services for non-native speakers.</p>
+                <p class="text-sm text-gray-600">Spanish options: IE University and University of Málaga dual-focus programs <a href="https://www.uma.es/etsi-informatica/info/140498/grado-ciberseguridad-IA-plan-de-estudios/" class="citation-link" target="_blank">[427]</a>
+                </p>
+              </div>
+
+              <div class="border-l-4 border-orange-500 pl-6">
+                <h4 class="font-semibold text-lg mb-2">Research &amp; Industry Validation</h4>
+                <p class="text-gray-700 mb-3">Assessment of publication counts, citation impact, research funding, and industry recruitment patterns.</p>
+                <p class="text-sm text-gray-600">35% cybersecurity job growth projected 2021-2031 <a href="https://hakia.com/degrees/cybersecurity/best-bachelors-programs/" class="citation-link" target="_blank">[350]</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h4 class="font-semibold text-lg mb-3">2026 CSRankings: Global AI Research Leadership Shift</h4>
+            <p class="text-gray-700 mb-3">
+              The <strong>2026 CSRankings reveal significant changes in global AI research leadership</strong>, with Chinese institutions now dominating seven of the top ten positions. <strong>Carnegie Mellon University represents the sole United States institution remaining in this elite tier</strong>, highlighting the program&#39;s exceptional research output and faculty quality.
+            </p>
+            <p class="text-sm text-gray-600">
+              <a href="https://www.idnfinancials.com/news/60946/china-dominates-top-10-tsinghua-university-is-worlds-best-ai-uni" class="citation-link" target="_blank">[341]</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- United States Institutions -->
+      <section id="us-institutions" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">United States Institutions</h2>
+
+          <!-- MIT -->
+          <div id="mit" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">Massachusetts Institute of Technology</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge">
+                    <i class="fas fa-crown mr-1"></i>
+                    #1 Global CS
+                  </span>
+                  <span class="ranking-badge bg-green-600">
+                    <i class="fas fa-graduation-cap mr-1"></i>
+                    Need-Blind
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$86,660</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Course 6-3:</strong> Computer Science &amp; Engineering with AI pathways</li>
+                  <li><strong>CSAIL:</strong> 60+ research groups across AI subdisciplines</li>
+                  <li><strong>IPRI:</strong> Cybersecurity policy and technical integration</li>
+                  <li><strong>UROP:</strong> 90%+ participation in undergraduate research</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Acceptance Rate:</strong> ~4.52% (Class of 2029)</li>
+                  <li><strong>Testing:</strong> SAT 1520-1580 or ACT 35-36</li>
+                  <li><strong>English:</strong> TOEFL 100+ (recommended 110+)</li>
+                  <li><strong>Financial Aid:</strong> 100% demonstrated need met</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Exceptional Financial Aid:</strong> MIT&#39;s need-blind, full-need-met policy makes it accessible to qualified Ecuadorian applicants. 35% of undergraduates pay no tuition, and 86% graduate without debt. Average financial aid package: $53,997 annually.
+                <a href="https://www.usnews.com/best-colleges/massachusetts-institute-of-technology-2178/paying" class="citation-link" target="_blank">[579]</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Stanford -->
+          <div id="stanford" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">Stanford University</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-red-600">
+                    <i class="fas fa-map-marker-alt mr-1"></i>
+                    Silicon Valley
+                  </span>
+                  <span class="ranking-badge">
+                    <i class="fas fa-star mr-1"></i>
+                    Top 3 Global
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$92,892</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>SAIL:</strong> Stanford AI Lab since 1963</li>
+                  <li><strong>Security Lab:</strong> Network security, cryptography, privacy</li>
+                  <li><strong>Quarter System:</strong> More course exploration opportunities</li>
+                  <li><strong>Symbolic Systems:</strong> Interdisciplinary AI preparation</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Acceptance Rate:</strong> Below 4%</li>
+                  <li><strong>Testing:</strong> SAT ~1570 or ACT ~35 (competitive)</li>
+                  <li><strong>English:</strong> TOEFL 100+ or IELTS 7.0+</li>
+                  <li><strong>Financial Aid:</strong> Need-aware, full need met</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- CMU -->
+          <div id="cmu" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">Carnegie Mellon University</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-purple-600">
+                    <i class="fas fa-robot mr-1"></i>
+                    First AI Degree
+                  </span>
+                  <span class="ranking-badge bg-indigo-600">
+                    <i class="fas fa-shield-alt mr-1"></i>
+                    CyLab Excellence
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$87,670</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>BSAI Program:</strong> First AI bachelor&#39;s degree in US (2018)</li>
+                  <li><strong>CyLab:</strong> World&#39;s largest university security research center</li>
+                  <li><strong>Ethics Integration:</strong> Social responsibility throughout curriculum</li>
+                  <li><strong>SURF Program:</strong> Summer undergraduate research fellowships</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>SCS Acceptance Rate:</strong> ~7%</li>
+                  <li><strong>Testing:</strong> SAT 1510-1560 or ACT 34-35</li>
+                  <li><strong>English:</strong> TOEFL 102+ (recommended 110+)</li>
+                  <li><strong>Specialization:</strong> 7 departments including Machine Learning</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-purple-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Global Leadership:</strong> CMU&#39;s dual excellence in AI and cybersecurity is unmatched. The BSAI program provides comprehensive machine learning education while CyLab addresses security challenges across software, hardware, network, and human dimensions with 50+ faculty members.
+                <a href="https://www.cs.cmu.edu/bs-in-artificial-intelligence/index" class="citation-link" target="_blank">[517]</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- UC Berkeley -->
+          <div id="berkeley" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">University of California, Berkeley</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-green-600">
+                    <i class="fas fa-university mr-1"></i>
+                    Public Value
+                  </span>
+                  <span class="ranking-badge bg-yellow-600">
+                    <i class="fas fa-ban mr-1"></i>
+                    Test-Blind
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$78,000+</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Dual Pathways:</strong> BA CS (flexible) or BS EECS (intensive)</li>
+                  <li><strong>BAIR Lab:</strong> Berkeley AI Research with Turing Award winners</li>
+                  <li><strong>Security Group:</strong> Software security, cryptography, privacy</li>
+                  <li><strong>Public University Value:</strong> Substantially lower tuition</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Testing Policy:</strong> Test-blind (SAT/ACT not considered)</li>
+                  <li><strong>Evaluation:</strong> GPA and course rigor heavily weighted</li>
+                  <li><strong>Essays:</strong> Four Personal Insight Questions (350 words each)</li>
+                  <li><strong>Deadline:</strong> November 30 (single deadline)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Financial Consideration:</strong> While Berkeley offers public university value with non-resident tuition of $48,018, financial aid for international students is very limited. Most costs must be self-funded, making total four-year costs approximately $312,000+.
+                <a href="https://siebelschool.illinois.edu/academics/undergraduate/degree-program-options" class="citation-link" target="_blank">[633]</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- European Institutions -->
+      <section id="europe" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">European Institutions</h2>
+
+          <!-- ETH Zurich -->
+          <div id="eth" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">ETH Zurich (Switzerland)</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-green-600">
+                    <i class="fas fa-euro-sign mr-1"></i>
+                    Exceptional Value
+                  </span>
+                  <span class="ranking-badge bg-red-600">
+                    <i class="fas fa-language mr-1"></i>
+                    German C1 Required
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$25,000-32,000</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>AI Center:</strong> 100+ professors across 7 departments</li>
+                  <li><strong>Security Group:</strong> Cryptography, system security research</li>
+                  <li><strong>3-Year Bachelor:</strong> Faster completion with optional Master</li>
+                  <li><strong>Industry Partnerships:</strong> Google, IBM, Microsoft, SAP</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Language:</strong> German C1 proficiency required</li>
+                  <li><strong>Assessment:</strong> Comprehensive Admission Test (CAM)</li>
+                  <li><strong>Alternatives:</strong> IB 38/42 or AP 3 tests with 3s</li>
+                  <li><strong>Deadline:</strong> April 30 for autumn entry</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-lg mb-4">
+              <p class="text-sm text-gray-700">
+                <strong>Exceptional Value Proposition:</strong> Even with the new triple tuition rate for non-EU students (CHF 2,190/semester), ETH Zurich represents the most affordable top-tier option globally. Total degree costs are roughly 15-20% of US private alternatives, though German language proficiency is mandatory.
+                <a href="https://ethz.ch/students/en/studies/financial/tuition-fees.html" class="citation-link" target="_blank">[740]</a>
+              </p>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Critical Language Requirement:</strong> The Bachelor in Computer Science is primarily taught in German, requiring C1-level proficiency. Most undergraduate programs require German-medium instruction, with limited English-taught alternatives available primarily at the graduate level.
+                <a href="https://www.shiksha.com/studyabroad/switzerland/universities/eth-zurich/admissions" class="citation-link" target="_blank">[735]</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Oxford -->
+          <div id="oxford" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">University of Oxford</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-indigo-600">
+                    <i class="fas fa-user-graduate mr-1"></i>
+                    Tutorial System
+                  </span>
+                  <span class="ranking-badge">
+                    <i class="fas fa-calendar mr-1"></i>
+                    3-Year Option
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$82,000-88,000</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Two Options:</strong> 3-year BA or 4-year MCompSci</li>
+                  <li><strong>Tutorial System:</strong> Weekly individual/small-group instruction</li>
+                  <li><strong>AI Research:</strong> Oxford Machine Learning Research Group</li>
+                  <li><strong>Security:</strong> Oxford Cyber Security Centre</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>A-levels:</strong> A*AA with A* in Mathematics</li>
+                  <li><strong>IB:</strong> 39 points with 766 at Higher Level</li>
+                  <li><strong>MAT:</strong> Mathematics Admissions Test required</li>
+                  <li><strong>Deadline:</strong> October 15 (UCAS)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-indigo-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Tutorial System Excellence:</strong> Oxford&#39;s tutorial system provides exceptional educational intensity with weekly individual or small-group instruction from leading researchers, creating unmatched depth of understanding and faculty interaction.
+                <a href="https://www.torontomu.ca/programs/undergraduate/computer-science/" class="citation-link" target="_blank">[635]</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Cambridge -->
+          <div id="cambridge" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">University of Cambridge</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-blue-600">
+                    <i class="fas fa-calculator mr-1"></i>
+                    Mathematical Intensity
+                  </span>
+                  <span class="ranking-badge">
+                    <i class="fas fa-microscope mr-1"></i>
+                    Research Excellence
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$69,000-76,000</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Supervision System:</strong> Weekly individual instruction</li>
+                  <li><strong>AI Research:</strong> Cambridge Machine Learning Group</li>
+                  <li><strong>Security:</strong> Cambridge Cybercrime Centre</li>
+                  <li><strong>Theoretical Rigor:</strong> Exceptional mathematical foundations</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>A-levels:</strong> A*A*A with A* in Mathematics &amp; Further Mathematics</li>
+                  <li><strong>IB:</strong> 40-42 points with 776 at Higher Level</li>
+                  <li><strong>TMUA:</strong> Test of Mathematics required</li>
+                  <li><strong>English:</strong> IELTS 7.5+ or TOEFL 110+</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Asian Institutions -->
+      <section id="asia" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">Asian Institutions</h2>
+
+          <!-- NUS -->
+          <div id="nus" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">National University of Singapore</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-green-600">
+                    <i class="fas fa-star mr-1"></i>
+                    Best Value Top-Tier
+                  </span>
+                  <span class="ranking-badge bg-blue-600">
+                    <i class="fas fa-handshake mr-1"></i>
+                    Employment Bond
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$6,000-8,500</div>
+                <div class="text-sm text-gray-600">Annual Tuition (with subsidy)</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>NUS AI Lab:</strong> Connected to Singapore&#39;s national AI strategy</li>
+                  <li><strong>Cybersecurity Lab:</strong> Links to cybersecurity agency</li>
+                  <li><strong>Strategic Location:</strong> Asian technology and financial hub</li>
+                  <li><strong>UROP:</strong> Undergraduate Research Opportunities Program</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Testing:</strong> SAT/ACT optional but recommended</li>
+                  <li><strong>Evaluation:</strong> Strong mathematics and science emphasis</li>
+                  <li><strong>Interview:</strong> For shortlisted candidates</li>
+                  <li><strong>Subsidy:</strong> 3-year employment bond required</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-lg mb-4">
+              <p class="text-sm text-gray-700">
+                <strong>Exceptional Value Proposition:</strong> NUS with MOE subsidy represents the best value among top-tier global institutions, with costs 70-80% below US private alternatives and strong post-graduation employment prospects in Asia&#39;s growing technology markets.
+                <a href="https://www.torontomu.ca/programs/undergraduate/computer-science/" class="citation-link" target="_blank">[635]</a>
+              </p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Subsidy Condition:</strong> The MOE Tuition Grant reduces annual fees from SGD 17,650-29,950 to SGD 8,250-11,500 (~$6,000-$8,500 USD) for eligible recipients, with a 3-year employment bond in Singapore after graduation (or repayment with interest).
+                <a href="https://www.torontomu.ca/programs/undergraduate/computer-science/" class="citation-link" target="_blank">[635]</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Canadian Institutions -->
+      <section id="canada" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">Canadian Institutions</h2>
+
+          <!-- University of Toronto -->
+          <div id="toronto" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">University of Toronto</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-blue-600">
+                    <i class="fas fa-brain mr-1"></i>
+                    Vector Institute
+                  </span>
+                  <span class="ranking-badge">
+                    <i class="fas fa-briefcase mr-1"></i>
+                    PEY Co-op
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$65,000-85,000</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>AI Engineering Minor:</strong> For engineering students</li>
+                  <li><strong>Cybersecurity Certificate:</strong> Network and computer security</li>
+                  <li><strong>Vector Institute:</strong> World-leading deep learning research center</li>
+                  <li><strong>PEY Co-op:</strong> 5-year option with Professional Experience Year</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Platform:</strong> OUAC 105 for international students</li>
+                  <li><strong>OSP:</strong> Online Student Profile mandatory</li>
+                  <li><strong>Academics:</strong> Low to mid-90s percentage average</li>
+                  <li><strong>Testing:</strong> SAT/ACT required for Fall 2026</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- University of Waterloo -->
+          <div id="waterloo" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">University of Waterloo</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-orange-600">
+                    <i class="fas fa-tools mr-1"></i>
+                    6 Co-op Terms
+                  </span>
+                  <span class="ranking-badge bg-green-600">
+                    <i class="fas fa-dollar-sign mr-1"></i>
+                    Earnings Offset
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$65,000-85,000</div>
+                <div class="text-sm text-gray-600">Net with Co-op Earnings</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Co-op Program:</strong> 6 paid work terms (24 months experience)</li>
+                  <li><strong>AI Coursework:</strong> Machine learning theory and applications</li>
+                  <li><strong>Security Courses:</strong> CS 453, CS 458, advanced cryptography</li>
+                  <li><strong>David R. Cheriton School:</strong> Strong computer science foundation</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>AIF:</strong> Admission Information Form required</li>
+                  <li><strong>Video Interview:</strong> Optional for additional context</li>
+                  <li><strong>English:</strong> IELTS 6.5+ or TOEFL 90+</li>
+                  <li><strong>Duration:</strong> 4-5 years with co-op</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-orange-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Co-op Value Proposition:</strong> Waterloo&#39;s co-op program can offset 30-50% of total educational costs through earnings while providing exceptional industry experience and employment networks. Co-op earnings: CAD 15,000-25,000 per work term (~$11,000-$18,000), with 6 terms totaling ~$66,000-$108,000.
+                <a href="https://www.torontomu.ca/programs/undergraduate/computer-science/" class="citation-link" target="_blank">[635]</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spanish-Speaking Programs -->
+      <section id="spanish" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">Spanish-Speaking Programs</h2>
+
+          <!-- IE University -->
+          <div id="ie" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">IE University (Spain)</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-blue-600">
+                    <i class="fas fa-globe mr-1"></i>
+                    English-Taught
+                  </span>
+                  <span class="ranking-badge bg-purple-600">
+                    <i class="fas fa-lightbulb mr-1"></i>
+                    Entrepreneurship
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$41,500-44,500</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>English Instruction:</strong> Taught entirely in English in Spain</li>
+                  <li><strong>AI + Cybersecurity:</strong> Integrated computer science foundation</li>
+                  <li><strong>Specialization Track:</strong> Cybersecurity and Ethical Hacking</li>
+                  <li><strong>Project-Based Learning:</strong> Practical application emphasis</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>GPA:</strong> Minimum 3.8/4.0 or equivalent</li>
+                  <li><strong>IB:</strong> Minimum 30/45 (typical offers 34-45)</li>
+                  <li><strong>Testing:</strong> ieGAT or SAT/ACT/LNAT</li>
+                  <li><strong>English:</strong> TOEFL 100+ or IELTS 7.0+</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- University of Málaga -->
+          <div id="malaga" class="program-card">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 class="serif text-2xl font-bold text-gray-800 mb-2">University of Málaga</h3>
+                <div class="flex items-center space-x-4 mb-4">
+                  <span class="ranking-badge bg-green-600">
+                    <i class="fas fa-euro-sign mr-1"></i>
+                    Most Affordable
+                  </span>
+                  <span class="ranking-badge bg-red-600">
+                    <i class="fas fa-language mr-1"></i>
+                    Spanish-Taught
+                  </span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-gray-800">$12,400-15,700</div>
+                <div class="text-sm text-gray-600">Total Annual Cost</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Program Highlights</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Unique Program:</strong> Grado en Ciberseguridad e Inteligencia Artificial</li>
+                  <li><strong>Dual Focus:</strong> 240 ECTS credits balanced in both disciplines</li>
+                  <li><strong>Integration:</strong> AI for threat detection, secure ML, ethical frameworks</li>
+                  <li><strong>International Mobility:</strong> 30 ECTS elective for exchange programs</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-3">Admission Requirements</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Academic:</strong> Ecuadorian Bachillerato General Unificado (BGU)</li>
+                  <li><strong>Language:</strong> Spanish B2 level (DELE or SIELE)</li>
+                  <li><strong>Exams:</strong> UNEDasiss accreditation + PCE examinations</li>
+                  <li><strong>Timeline:</strong> 8-12 month preparation required</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-lg mb-4">
+              <p class="text-sm text-gray-700">
+                <strong>Exceptional Value Proposition:</strong> University of Málaga represents the most affordable quality option globally, with total four-year costs 85-95% below US private institutions and 70% below ETH Zurich even after accounting for living expenses.
+                <a href="https://www.uma.es/etsi-informatica/info/140498/grado-ciberseguridad-IA-plan-de-estudios/" class="citation-link" target="_blank">[402]</a>
+              </p>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Critical Administrative Process:</strong> Ecuadorian students must complete a multi-step process including document preparation (junior year), homologation request (6-12 months), UNEDasiss registration, PCE examinations (May/September), and visa application. Total timeline: 8-12 months - early initiation essential.
+                <a href="https://didactys.com/como-estudiar-en-espana-siendo-ecuatoriano/" class="citation-link" target="_blank">[462]</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparative Analysis -->
+      <section id="comparison" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">Comparative Analysis</h2>
+
+          <!-- Comprehensive Comparison Table -->
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full text-sm">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="text-left p-3 font-semibold">Institution</th>
+                  <th class="text-left p-3 font-semibold">Country</th>
+                  <th class="text-left p-3 font-semibold">Language</th>
+                  <th class="text-right p-3 font-semibold">Annual Tuition</th>
+                  <th class="text-right p-3 font-semibold">4-Year Total</th>
+                  <th class="text-left p-3 font-semibold">Key Differentiator</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="p-3 font-medium">MIT</td>
+                  <td class="p-3">USA</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">$64,730</td>
+                  <td class="p-3 text-right font-semibold text-red-600">$346,640</td>
+                  <td class="p-3">Need-blind, full-need-met for all</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">Stanford</td>
+                  <td class="p-3">USA</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">$68,544</td>
+                  <td class="p-3 text-right font-semibold text-red-600">$371,568</td>
+                  <td class="p-3">Silicon Valley proximity; REA option</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">Carnegie Mellon</td>
+                  <td class="p-3">USA</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">$64,596</td>
+                  <td class="p-3 text-right font-semibold text-red-600">$350,680</td>
+                  <td class="p-3">First US AI bachelor&#39;s degree; CyLab excellence</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">UC Berkeley</td>
+                  <td class="p-3">USA</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">$48,018</td>
+                  <td class="p-3 text-right font-semibold text-orange-600">$312,000+</td>
+                  <td class="p-3">Test-blind admission; public university value</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">University of Toronto</td>
+                  <td class="p-3">Canada</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">~$53,000</td>
+                  <td class="p-3 text-right font-semibold text-orange-600">$260k-340k</td>
+                  <td class="p-3">AI Engineering Minor; PEY co-op</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">University of Waterloo</td>
+                  <td class="p-3">Canada</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">~$50k-53k</td>
+                  <td class="p-3 text-right font-semibold text-green-600">$200k-280k (net)</td>
+                  <td class="p-3">6 paid co-op terms; exceptional industry integration</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">ETH Zurich</td>
+                  <td class="p-3">Switzerland</td>
+                  <td class="p-3">German (C1)</td>
+                  <td class="p-3 text-right">~$4,800</td>
+                  <td class="p-3 text-right font-semibold text-green-600">~$75k-96k (3 yrs)</td>
+                  <td class="p-3">Lowest tuition globally; 3-year bachelor&#39;s</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">University of Oxford</td>
+                  <td class="p-3">UK</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">~$61,500</td>
+                  <td class="p-3 text-right font-semibold text-orange-600">$246k-328k</td>
+                  <td class="p-3">Tutorial system; 3-year BA option</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">University of Cambridge</td>
+                  <td class="p-3">UK</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">~$52,000</td>
+                  <td class="p-3 text-right font-semibold text-green-600">$207k-276k</td>
+                  <td class="p-3">Supervision system; mathematical intensity</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">NUS (with subsidy)</td>
+                  <td class="p-3">Singapore</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right font-semibold text-green-600">$6,000-8,500</td>
+                  <td class="p-3 text-right font-semibold text-green-600">$80k-120k</td>
+                  <td class="p-3">Best value top-tier; 3-year employment bond</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">IE University</td>
+                  <td class="p-3">Spain</td>
+                  <td class="p-3">English</td>
+                  <td class="p-3 text-right">~$28,500</td>
+                  <td class="p-3 text-right font-semibold text-blue-600">$166k-178k</td>
+                  <td class="p-3">Business-oriented; entrepreneurship focus</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">University of Málaga</td>
+                  <td class="p-3">Spain</td>
+                  <td class="p-3">Spanish</td>
+                  <td class="p-3 text-right font-semibold text-green-600">$890-2,700</td>
+                  <td class="p-3 text-right font-semibold text-green-600">$49.6k-62.8k</td>
+                  <td class="p-3">Most affordable globally; Spanish language</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Cost-Benefit Analysis -->
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-blue-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg mb-4 text-blue-900">Cost-Benefit Analysis by Student Profile</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <strong>Maximum financial aid eligibility; exceptional academics</strong>
+                  <p class="text-gray-700 mt-1">MIT, Stanford - Need-blind/full-need-met policies; world-class resources</p>
+                </div>
+                <div>
+                  <strong>Strong academics; moderate financial resources; career-focused</strong>
+                  <p class="text-gray-700 mt-1">NUS (with subsidy), University of Waterloo - Exceptional value; strong industry outcomes</p>
+                </div>
+                <div>
+                  <strong>German language proficiency; technical precision preference</strong>
+                  <p class="text-gray-700 mt-1">ETH Zurich - Unbeatable cost-quality ratio; European industry access</p>
+                </div>
+                <div>
+                  <strong>Spanish language dominance; cost-conscious; EU career interest</strong>
+                  <p class="text-gray-700 mt-1">University of Málaga - Minimal cost; specialized dual curriculum; Spanish/EU markets</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg mb-4 text-green-900">Critical Decision Factors</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <strong>Lowest Total Cost</strong>
+                  <p class="text-gray-700 mt-1">University of Málaga, NUS (subsidized), ETH Zurich</p>
+                </div>
+                <div>
+                  <strong>Best Financial Aid for Internationals</strong>
+                  <p class="text-gray-700 mt-1">MIT, Stanford, NUS - Highly competitive admission</p>
+                </div>
+                <div>
+                  <strong>Strongest AI Research</strong>
+                  <p class="text-gray-700 mt-1">MIT, Carnegie Mellon, Stanford - CMU: dedicated AI bachelor&#39;s</p>
+                </div>
+                <div>
+                  <strong>Strongest Cybersecurity</strong>
+                  <p class="text-gray-700 mt-1">Carnegie Mellon (CyLab), MIT, Stanford - CMU: largest university-based security institute</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Application Timeline -->
+      <section id="timeline" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">Application Timeline Critical Path</h2>
+
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full text-sm">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="text-left p-3 font-semibold">Institution</th>
+                  <th class="text-left p-3 font-semibold">Early Deadline</th>
+                  <th class="text-left p-3 font-semibold">Regular Deadline</th>
+                  <th class="text-left p-3 font-semibold">Decision Release</th>
+                  <th class="text-left p-3 font-semibold">Special Notes</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="p-3 font-medium">Oxford, Cambridge</td>
+                  <td class="p-3 font-semibold text-red-600">October 15</td>
+                  <td class="p-3">October 15</td>
+                  <td class="p-3">January</td>
+                  <td class="p-3">MAT/TMUA required</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">MIT</td>
+                  <td class="p-3">November 1 (EA)</td>
+                  <td class="p-3">January 5</td>
+                  <td class="p-3">Mid-Dec (EA); Mid-Mar (RD)</td>
+                  <td class="p-3">Proprietary application system</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">Stanford</td>
+                  <td class="p-3">November 1 (REA)</td>
+                  <td class="p-3">January 5</td>
+                  <td class="p-3">Mid-Dec (REA); Early April (RD)</td>
+                  <td class="p-3">REA restricts other private early apps</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">Carnegie Mellon</td>
+                  <td class="p-3">Nov 1 (ED I); Jan 3 (ED II)</td>
+                  <td class="p-3">January 3</td>
+                  <td class="p-3">Dec (ED I); Feb (ED II); Apr (RD)</td>
+                  <td class="p-3">Binding ED options available</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">UC Berkeley</td>
+                  <td class="p-3">N/A</td>
+                  <td class="p-3 font-semibold text-orange-600">November 30</td>
+                  <td class="p-3">March</td>
+                  <td class="p-3">Test-blind; UC Application only</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">University of Toronto</td>
+                  <td class="p-3">December 1</td>
+                  <td class="p-3">January 15</td>
+                  <td class="p-3">Feb-Apr (rolling)</td>
+                  <td class="p-3">OSP mandatory; heavily weighted</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">ETH Zurich</td>
+                  <td class="p-3">N/A</td>
+                  <td class="p-3 font-semibold text-green-600">April 30</td>
+                  <td class="p-3">July</td>
+                  <td class="p-3">German C1 required; CAM examination</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">NUS</td>
+                  <td class="p-3">Varies</td>
+                  <td class="p-3">March-July</td>
+                  <td class="p-3">July-August</td>
+                  <td class="p-3">Rolling; MOE subsidy automatic for most</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">IE University</td>
+                  <td class="p-3">Rolling</td>
+                  <td class="p-3">Rolling</td>
+                  <td class="p-3">2-4 weeks after completion</td>
+                  <td class="p-3">Flexible timeline; interview required</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="p-3 font-medium">University of Málaga</td>
+                  <td class="p-3">N/A</td>
+                  <td class="p-3 font-semibold text-blue-600">June</td>
+                  <td class="p-3">July-September</td>
+                  <td class="p-3">8-12 month preparation required</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bg-yellow-50 p-6 rounded-xl">
+            <h3 class="font-semibold text-lg mb-3 text-yellow-900">Critical Strategic Insight</h3>
+            <p class="text-gray-700">
+              <strong>British institutions (Oxford, Cambridge) require preparation beginning in spring of junior year</strong>, with October 15 deadlines nearly a year before enrollment. Ecuadorian applicants targeting these institutions must <strong>initiate standardized testing and examination preparation (MAT/TMUA) by early 2025 for Fall 2026 entry</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Recommendations -->
+      <section id="recommendations" class="mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-800">Final Recommendations for Ecuadorian Applicants</h2>
+
+          <div class="space-y-8">
+            <div class="bg-blue-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg mb-3 text-blue-900">
+                <i class="fas fa-star mr-2"></i>
+                If you have exceptional academics and significant financial need
+              </h3>
+              <p class="text-gray-700">
+                <strong>Apply to MIT and Stanford</strong>. Their need-blind or need-aware full-need-met policies make world-class education accessible regardless of economic background. The investment in application preparation is substantial but the potential return is transformative.
+              </p>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg mb-3 text-green-900">
+                <i class="fas fa-chart-line mr-2"></i>
+                If you seek maximum value with strong career outcomes
+              </h3>
+              <p class="text-gray-700">
+                <strong>Prioritize NUS with MOE subsidy or University of Waterloo with co-op</strong>. NUS offers top-tier education at 20-25% of US costs with Asian market access; Waterloo&#39;s co-op program can offset costs while building exceptional employment networks.
+              </p>
+            </div>
+
+            <div class="bg-purple-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg mb-3 text-purple-900">
+                <i class="fas fa-language mr-2"></i>
+                If you are a native Spanish speaker with cost consciousness
+              </h3>
+              <p class="text-gray-700">
+                <strong>University of Málaga is unmatched</strong>. The explicit dual-focus curriculum, minimal tuition, and Spanish/EU market access create unique value. Begin the UNEDasiss process <strong>12+ months before intended enrollment</strong>.
+              </p>
+            </div>
+
+            <div class="bg-indigo-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg mb-3 text-indigo-900">
+                <i class="fas fa-globe-europe mr-2"></i>
+                If you have German language proficiency or are willing to acquire it
+              </h3>
+              <p class="text-gray-700">
+                <strong>ETH Zurich represents extraordinary value</strong>. The 3-year structure, minimal tuition, and exceptional research quality create unmatched cost-efficiency for qualified applicants.
+              </p>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg mb-3 text-orange-900">
+                <i class="fas fa-robot mr-2"></i>
+                If you prioritize AI-security intersection specifically
+              </h3>
+              <p class="text-gray-700">
+                <strong>Carnegie Mellon is the global leader</strong>. The first dedicated AI bachelor&#39;s degree, combined with CyLab&#39;s scale and recognition, provides preparation unavailable elsewhere.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 p-6 bg-gray-50 rounded-xl">
+            <h3 class="font-semibold text-lg mb-4 text-gray-800">Strategic Application Portfolio Recommendation</h3>
+            <p class="text-gray-700 mb-4">
+              For optimal outcomes, consider a diversified application strategy:
+            </p>
+            <ul class="space-y-2 text-gray-700">
+              <li><strong>Reach Schools (1-2):</strong> MIT, Stanford, or Carnegie Mellon for world-class opportunities</li>
+              <li><strong>Value Schools (2-3):</strong> NUS (with subsidy), University of Waterloo, or ETH Zurich for cost-effective excellence</li>
+              <li><strong>Target Schools (1-2):</strong> IE University or University of Málaga for language/cultural fit and affordability</li>
+              <li><strong>Safety School (1):</strong> University of Málaga for guaranteed accessibility and minimal cost</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add subtle hover effects to program cards
+        document.querySelectorAll('.program-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-4px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+        });
+
+        // Highlight current section in TOC
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const tocLinks = document.querySelectorAll('.toc-fixed a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('bg-blue-100', 'text-blue-800');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('bg-blue-100', 'text-blue-800');
+                }
+            });
+        });
+    </script>
+  
+
+</body></html>
